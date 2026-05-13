@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <link rel="stylesheet" href="nuevo1.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestro Trabajo - SG Dev & Testing</title>
+
+
+</head>
+
+
+ 
+
+
+<body>
+
+    <!-- NAVBAR -->
+<header class="header">
+
+    <div class="logo">SG Dev & Testing</div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav class="nav" id="nav">
+        <a href="index.html">Inicio</a>
+        <a href="nuestroTrabajo.html">Nuestro trabajo</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+</header>
+<script>
+function toggleMenu() {
+    document.getElementById("nav").classList.toggle("active");
+}
+</script>
+<!-- 🔒 CONTENEDOR PRINCIPAL -->
+<div class="sg-trabajo">
+
+<header>
+    <h1>Nuestro Trabajo</h1>
+    <p>Soluciones digitales confiables para empresas</p>
+</header>
+
+<div class="container">
+
+    <h2>Proyectos Realizados</h2>
+    <p class="descripcion">
+        En SG Dev & Testing desarrollamos soluciones digitales enfocadas en mejorar la eficiencia, 
+        organización y presencia online de nuestros clientes.
+    </p>
+
+    <!-- PROYECTO 1 -->
+    <div class="card-trabajo">
+        <img src="trabajo2.jpeg">
+        <div class="card-content">
+            <h3>Sistema de Gestión de Espacios Públicos</h3>
+            <p>
+                Desarrollo de una aplicación para la gestión de memos y control de actividades.
+            </p>
+        </div>
+    </div>
+
+    <!-- PROYECTO 2 -->
+    <div class="card-trabajo">
+        <img class="trabajo"src="trabajo1.png">
+        <div class="card-content">
+            <h3>Sitio Web Institucional</h3>
+            <p>
+                Diseño de un sitio moderno para mejorar la presencia digital.
+            </p>
+        </div>
+    </div>
+
+    <!-- PROYECTO 3 -->
+    <div class="card-trabajo">
+        <img src="trabajo3.png">
+        <div class="card-content">
+            <h3>Testing de Software</h3>
+            <p>
+                Pruebas y control de calidad para mejorar estabilidad.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 SG Dev & Testing</p>
+</footer>
+
+</div>
+
+</body>
+</html>

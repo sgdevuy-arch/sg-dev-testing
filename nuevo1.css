@@ -1,0 +1,401 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COLORES BASADOS EN TU LOGO */
+:root {
+    --azul-oscuro: #0a1f3c;
+    --azul-medio: #0f2f5f;
+    --azul-claro: #1e4fa3;
+    --gris: #1c1c1c;
+    --texto: #eaeaea;
+    --blanco: #ffffff;
+    --verde-acento: #22c55e;
+}
+
+/* BODY */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background: 
+        linear-gradient(rgba(10, 31, 60, 0.9), rgba(10, 31, 60, 0.95)),
+        url("fondo2.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: contain;
+background-repeat: repeat;
+
+    color: var(--texto);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* LOGO TEXTO */
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--blanco);
+}
+
+.logo span {
+    color: var(--azul-claro);
+}
+
+/* LINKS */
+.nav-links a {
+    color: var(--texto);
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--azul-claro);
+}
+
+/* HERO */
+.hero h1 {
+    font-size: 1.8rem;   /* más chico */
+    margin-top: 5px;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-top: 5px;
+}.hero {
+    text-align: center;
+    padding: 40px 20px;   /* menos aire */
+}
+
+}
+
+.logo-hero:hover {
+    opacity: 1;
+}
+/* HERO AJUSTADO */
+.hero {
+    text-align: center;
+    padding: 50px 20px;  /* equilibrio perfecto */
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 0.95;
+        transform: translateY(0);
+    }
+}
+.logo-hero:hover {
+    transform: scale(1.05);
+}
+
+/* Asegurar centrado perfecto */
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--blanco);
+    letter-spacing: 1px;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #cbd5e1;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    border: 1px solid var(--azul-claro);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--azul-claro);
+    transform: translateY(-2px);
+}
+
+/* SERVICIOS */
+.services {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+    color: var(--blanco);
+    font-weight: 500;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border: 1px solid var(--azul-claro);
+}
+
+.card h3 {
+    color: var(--blanco);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #cbd5e1;
+}
+
+/* LISTAS */
+ul {
+    list-style: none;
+    padding: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+/* 🔒 TODO encapsulado */
+.sg-trabajo {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+/* HEADER */
+.sg-trabajo header {
+    background: #0d1b2a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* CONTENIDO */
+.sg-trabajo .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* TITULOS */
+.sg-trabajo h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sg-trabajo .descripcion {
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* TARJETAS */
+.sg-trabajo .card-trabajo {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+/* IMAGEN */
+.sg-trabajo .card-trabajo img {
+    width: 100%;
+}
+
+/* TEXTO */
+.sg-trabajo .card-content {
+    padding: 20px;
+}
+
+.sg-trabajo .card-content h3 {
+    margin-top: 0;
+}
+
+.sg-trabajo .card-content p {
+    color: #555;
+}
+
+/* FOOTER */
+.sg-trabajo footer {
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    padding: 15px;
+}
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+}
+h1 {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* móvil primero */
+.container {
+    padding: 10px;
+}
+
+/* luego escritorio */
+@media (min-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+}
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a2540;
+    color: white;
+    padding: 15px 20px;
+}
+
+/* LOGO */
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #0a2540;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    .nav a {
+        padding: 10px 0;
+        display: block;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+}

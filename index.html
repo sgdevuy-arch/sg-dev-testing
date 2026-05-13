@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+    <title>SG Dev & Testing</title>
+
+    <!-- LINK AL CSS -->
+    <link rel="stylesheet" href="nuevo1.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+<header class="header">
+
+    <div class="logo">SG Dev & Testing</div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav class="nav" id="nav">
+        <a href="index.html">Inicio</a>
+        <a href="nuestroTrabajo.html">Nuestro trabajo</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+</header>
+<script>
+function toggleMenu() {
+    document.getElementById("nav").classList.toggle("active");
+}
+</script>
+
+    <!-- HERO -->
+    <section class="hero">
+	<img src="logo2.png" alt="Descripción de la imagen">
+        <h1>Soluciones digitales confiables</h1>
+        <p>Desarrollo, testing y soporte profesional</p>
+        <a href="#contacto" class="btn">Contactar</a>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services" id="servicios">
+        <h2>Nuestros Servicios</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>💻 Desarrollo Web</h3>
+                <p>Creamos páginas modernas, rápidas y adaptadas a tu negocio.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧪 Testing</h3>
+                <p>Detectamos errores y mejoramos la calidad de tu software.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔧 Soporte & Mantenimiento</h3>
+                <p>Nos encargamos de que todo funcione siempre perfecto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="services" id="contacto">
+        <h2>Contacto</h2>
+        <p>📧 Email: sgdev.uy@gmail.com </p>
+        <p>📱 WhatsApp: +598 91 041 567 * +598 99 318 088</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 SG Dev & Testing - Todos los derechos reservados
+    </footer>
+
+</body>
+</html>
