@@ -15,23 +15,41 @@
 
 <body>
 
-    <!-- NAVBAR -->
-<header class="header">
+<!-- NAVBAR PREMIUM -->
+<header class="navbar">
 
-    <div class="logo">SG Dev & Testing</div>
+    <!-- LOGO -->
+    <div class="logo">
+        SG <span>Dev & Testing</span>
+    </div>
 
-    <button class="menu-toggle" onclick="toggleMenu()">
+    <!-- BOTÓN MOBILE -->
+    <button class="menu-toggle" id="menu-toggle">
         ☰
     </button>
 
-    <nav class="nav" id="nav">
+    <!-- LINKS -->
+    <nav class="nav-links" id="nav-links">
+
         <a href="index.html">Inicio</a>
-        <a href="nuestroTrabajo.html">Nuestro trabajo</a>
+
+        <a href="nuestroTrabajo.html">Proyectos</a>
+
         <a href="servicios.html">Servicios</a>
+
         <a href="contacto.html">Contacto</a>
+
+       
+
     </nav>
 
 </header>
+<script>
+function toggleMenu() {
+    document.getElementById("nav").classList.toggle("active");
+}
+</script>
+<script>
 <script>
 function toggleMenu() {
     document.getElementById("nav").classList.toggle("active");

@@ -14,19 +14,32 @@
 <body>
 
     <!-- NAVBAR -->
-<header class="header">
+<!-- NAVBAR PREMIUM -->
+<header class="navbar">
 
-    <div class="logo">SG Dev & Testing</div>
+    <!-- LOGO -->
+    <div class="logo">
+        SG <span>Dev & Testing</span>
+    </div>
 
-    <button class="menu-toggle" onclick="toggleMenu()">
+    <!-- BOTÓN MOBILE -->
+    <button class="menu-toggle" id="menu-toggle">
         ☰
     </button>
 
-    <nav class="nav" id="nav">
+    <!-- LINKS -->
+    <nav class="nav-links" id="nav-links">
+
         <a href="index.html">Inicio</a>
-        <a href="nuestroTrabajo.html">Nuestro trabajo</a>
+
+        <a href="nuestroTrabajo.html">Proyectos</a>
+
         <a href="servicios.html">Servicios</a>
+
         <a href="contacto.html">Contacto</a>
+
+       
+
     </nav>
 
 </header>
@@ -35,36 +48,95 @@ function toggleMenu() {
     document.getElementById("nav").classList.toggle("active");
 }
 </script>
+<script>
 
-    <!-- HERO -->
-    <section class="hero">
-	<img src="logo2.png" alt="Descripción de la imagen">
-        <h1>Soluciones digitales confiables</h1>
-        <p>Desarrollo, testing y soporte profesional</p>
-        <a href="#contacto" class="btn">Contactar</a>
-    </section>
+<script>
+function toggleMenu() {
+    document.getElementById("nav").classList.toggle("active");
+}
+</script>
 
-    <!-- SERVICIOS -->
-    <section class="services" id="servicios">
-        <h2>Nuestros Servicios</h2>
+<!-- HERO PREMIUM -->
+<section class="hero">
 
-        <div class="cards">
-            <div class="card">
-                <h3>💻 Desarrollo Web</h3>
-                <p>Creamos páginas modernas, rápidas y adaptadas a tu negocio.</p>
-            </div>
+    <!-- LOGO -->
+    <img src="logo2.png" alt="Descripción de la imagen">
 
-            <div class="card">
-                <h3>🧪 Testing</h3>
-                <p>Detectamos errores y mejoramos la calidad de tu software.</p>
-            </div>
+    <!-- TITULO -->
+    <h1>
+        Transformamos ideas en software profesional.
+    </h1>
 
-            <div class="card">
-                <h3>🔧 Soporte & Mantenimiento</h3>
-                <p>Nos encargamos de que todo funcione siempre perfecto.</p>
-            </div>
+    <!-- TEXTO -->
+    <p>
+        Desarrollo web, testing y soluciones digitales modernas
+        para empresas que quieren crecer.
+    </p>
+
+    <!-- BOTONES -->
+    <div class="hero-buttons">
+
+        <a href="contacto.html" class="btn">
+            Solicitar presupuesto
+        </a>
+
+        <a href="nuestroTrabajo.html" class="btn btn-secondary">
+            Ver proyectos
+        </a>
+
+    </div>
+
+</section>
+
+
+   <section class="services">
+
+    <h2>Nuestros Servicios</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="card-icon">💻</div>
+
+            <h3>Desarrollo Web</h3>
+
+            <p>
+                Sitios modernos, rápidos y optimizados
+                para empresas y emprendimientos.
+            </p>
+
         </div>
-    </section>
+
+        <div class="card">
+
+            <div class="card-icon">🧪</div>
+
+            <h3>Testing de Software</h3>
+
+            <p>
+                Pruebas funcionales y control de calidad
+                para sistemas y aplicaciones.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-icon">⚡</div>
+
+            <h3>Automatización</h3>
+
+            <p>
+                Soluciones digitales para optimizar
+                procesos y mejorar productividad.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- CONTACTO -->
     <section class="services" id="contacto">
