@@ -148,7 +148,7 @@ async function analizar() {
             <div class="preview-container">
 
                 <img 
-                    src="http://localhost:3000/screenshots/${data.screenshot}" 
+                    src="https://sg-analyzer.onrender.com/screenshots/${data.screenshot}" 
                     class="preview-img"
                 >
 
