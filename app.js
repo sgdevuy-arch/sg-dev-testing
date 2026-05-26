@@ -1,10 +1,37 @@
+
 function obtenerColor(score) {
-    if (score >= 80) return "#00ff88";
-    if (score >= 50) return "#ffc107";
+    if (score >= 85) return "#00ff88";
+    if (score >= 60) return "#ffc107";
     return "#ff4d4d";
 }
 
-function crearCard(titulo, valor, texto) {
+function obtenerTexto(score, tipo) {
+
+    const textos = {
+        performance: {
+            high: "🔥 Excelente rendimiento del sitio.",
+            mid: "👍 Buen rendimiento, optimizable.",
+            low: "⚠️ Rendimiento bajo, optimizar recursos."
+        },
+        seo: {
+            high: "🔥 SEO muy bien optimizado.",
+            mid: "👍 SEO aceptable, mejorar meta tags.",
+            low: "⚠️ SEO débil, falta optimización."
+        },
+        accessibility: {
+            high: "🔥 Excelente accesibilidad.",
+            mid: "👍 Buena accesibilidad con mejoras menores.",
+            low: "⚠️ Problemas de accesibilidad detectados."
+        }
+    };
+
+    if (score >= 85) return textos[tipo].high;
+    if (score >= 60) return textos[tipo].mid;
+    return textos[tipo].low;
+}
+
+function crearCard(titulo, valor, tipo) {
+
     return `
     <div class="card">
 
@@ -16,78 +43,79 @@ function crearCard(titulo, valor, texto) {
             <div class="bar" style="width:${valor}%; background:${obtenerColor(valor)};"></div>
         </div>
 
-        <p>${texto}</p>
+        <p>${obtenerTexto(valor, tipo)}</p>
 
     </div>
     `;
 }
 
-function getComentario(tipo, score) {
-
-    if (tipo === "performance") {
-        if (score >= 80) return "🔥 Excelente rendimiento del sitio";
-        if (score >= 60) return "👍 Buen rendimiento, mejorable";
-        return "⚠️ Rendimiento bajo, optimizar recursos";
-    }
-
-    if (tipo === "seo") {
-        if (score >= 80) return "🔥 SEO bien optimizado";
-        if (score >= 60) return "👍 SEO aceptable";
-        return "⚠️ SEO débil";
-    }
-
-    if (tipo === "accessibility") {
-        if (score >= 80) return "🔥 Buena accesibilidad";
-        if (score >= 60) return "👍 Accesibilidad media";
-        return "⚠️ Problemas de accesibilidad";
-    }
-
-    return "";
+function generarScore() {
+    return Math.floor(Math.random() * 35) + 65;
 }
 
 function analizar() {
 
+    console.log("🔍 Analizando sitio...");
+
     let url = document.getElementById("urlInput").value.trim();
+
+    if (!url) {
+        alert("Ingresa una URL");
+        return;
+    }
 
     if (!url.startsWith("http")) {
         url = "https://" + url;
     }
 
     const resultadoDiv = document.getElementById("resultado");
+    const loader = document.getElementById("loader");
+    const loaderTexto = document.getElementById("loaderTexto");
 
-    resultadoDiv.innerHTML = "🔍 Analizando sitio...";
+    const mensajes = [
+        "🔍 Analizando estructura...",
+        "⚡ Midiendo rendimiento...",
+        "🔍 Revisando SEO...",
+        "♿ Analizando accesibilidad...",
+        "📊 Generando reporte final..."
+    ];
+
+    let i = 0;
+    loaderTexto.innerHTML = mensajes[0];
+
+    const intervalo = setInterval(() => {
+        i = (i + 1) % mensajes.length;
+        loaderTexto.innerHTML = mensajes[i];
+    }, 1200);
+
+    loader.classList.remove("oculto");
+    resultadoDiv.classList.add("oculto");
+    resultadoDiv.innerHTML = "";
 
     setTimeout(() => {
 
-        // 🎲 simulación realista
-        const performance = Math.floor(Math.random() * 35) + 65;
-        const seo = Math.floor(Math.random() * 35) + 60;
-        const accessibility = Math.floor(Math.random() * 30) + 70;
-        const bestPractices = Math.floor(Math.random() * 30) + 70;
+        clearInterval(intervalo);
+
+        const performance = generarScore();
+        const seo = generarScore();
+        const accessibility = generarScore();
+
+        loader.classList.add("oculto");
+        resultadoDiv.classList.remove("oculto");
 
         resultadoDiv.innerHTML = `
-        <h2>📊 Resultado del análisis</h2>
+            <h2>📊 Resultado del análisis</h2>
 
-        <div class="grid-resultados">
+            <div class="grid-resultados">
 
-            ${crearCard("⚡ Performance", performance, getComentario("performance", performance))}
+                ${crearCard("⚡ Performance", performance, "performance")}
 
-            ${crearCard("🔍 SEO", seo, getComentario("seo", seo))}
+                ${crearCard("🔍 SEO", seo, "seo")}
 
-            ${crearCard("♿ Accesibilidad", accessibility, getComentario("accessibility", accessibility))}
+                ${crearCard("♿ Accesibilidad", accessibility, "accessibility")}
 
-            ${crearCard("🛠 Best Practices", bestPractices, "Buenas prácticas generales del sitio")}
-
-        </div>
-
-        <div class="recomendaciones">
-            <h3>💡 Recomendaciones</h3>
-            <p>⚡ Optimizar imágenes</p>
-            <p>🔍 Mejorar meta tags</p>
-            <p>♿ Revisar accesibilidad</p>
-            <p>🚀 Reducir scripts innecesarios</p>
-        </div>
+            </div>
         `;
 
-    }, 1200);
+    }, 2500);
 }
