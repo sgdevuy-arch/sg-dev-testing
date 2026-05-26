@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "chrome-launcher": "^1.2.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "lighthouse": "^13.3.0",
+    "puppeteer": "^25.1.0"
+  }
+}

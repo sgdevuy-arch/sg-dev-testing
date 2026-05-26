@@ -4,82 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contacto - SG Dev & Testing</title>
+    <title>SG Analyzer</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="nuevo1.css">
-	<script src="app.js"></script>
 </head>
 
 <body>
 
-<!-- NAVBAR PREMIUM -->
+<!-- NAVBAR -->
 <header class="navbar">
 
-    <!-- LOGO -->
     <div class="logo">
         SG <span>Dev & Testing</span>
     </div>
 
-    <!-- BOTÓN MOBILE -->
-    <button class="menu-toggle" id="menu-toggle">
-        ☰
-    </button>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
 
-    <!-- LINKS -->
     <nav class="nav-links" id="nav-links">
-
         <a href="index.html">Inicio</a>
-
         <a href="nuestroTrabajo.html">Proyectos</a>
-
         <a href="servicios.html">Servicios</a>
-		
-		<a href="analizador.html">SG Analyzer</a>
-
+        <a href="analizador.html">SG Analyzer</a>
         <a href="contacto.html">Contacto</a>
-		
-		
-
-       
-
     </nav>
 
 </header>
-<script>
-function toggleMenu() {
-    document.getElementById("nav").classList.toggle("active");
-}
-</script>
-<script>
 
-<script>
-function toggleMenu() {
-    document.getElementById("nav").classList.toggle("active");
-}
-</script>
-
-<<div class="analizador">
+<!-- ANALIZADOR -->
+<div class="analizador">
 
     <h2>Analiza tu sitio web</h2>
 
     <input type="text" id="urlInput" placeholder="https://tusitio.com">
 
     <button onclick="analizar()">Analizar</button>
-<div id="loader" class="loader oculto"></div>
 
-<p id="loaderTexto" class="loader-texto"></p>
+    <div id="loader" class="loader oculto">
+        🔍 Analizando...
+    </div>
 
-<div id="resultado" class="glass oculto"></div>
+    <p id="loaderTexto" class="loader-texto"></p>
 
-    <div id="resultado"></div>
+    <div id="resultado" class="glass oculto"></div>
 
 </div>
 
 <!-- FOOTER -->
 <footer>
-    © 2026 SG Dev & Testing - Todos los derechos reservados
+    © 2026 SG Dev & Testing
 </footer>
+
+<!-- JS -->
+<script src="app.js" defer></script>
+
+<!-- MENU MOBILE -->
+<script>
+document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("nav-links").classList.toggle("active");
+});
+</script>
 
 </body>
 </html>

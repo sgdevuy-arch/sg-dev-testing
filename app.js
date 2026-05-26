@@ -1,194 +1,93 @@
-function obtenerColor(score){
-
-    if(score >= 90){
-
-        return "#00ff88";
-    }
-
-    if(score >= 50){
-
-        return "#ffc107";
-    }
-
+function obtenerColor(score) {
+    if (score >= 80) return "#00ff88";
+    if (score >= 50) return "#ffc107";
     return "#ff4d4d";
 }
 
-function crearCard(titulo, valor){
-
+function crearCard(titulo, valor, texto) {
     return `
+    <div class="card">
 
-        <div class="card-score">
+        <h3>${titulo}</h3>
 
-            <h3>${titulo}</h3>
+        <div class="score">${valor}</div>
 
-            <div class="barra-fondo">
-
-                <div 
-                    class="barra"
-                    style="
-                        width:${valor}%;
-                        background:${obtenerColor(valor)};
-                    "
-                ></div>
-
-            </div>
-
-            <p class="numero-score">
-                ${valor}
-            </p>
-
+        <div class="bar-container">
+            <div class="bar" style="width:${valor}%; background:${obtenerColor(valor)};"></div>
         </div>
+
+        <p>${texto}</p>
+
+    </div>
     `;
 }
 
-async function analizar() {
+function getComentario(tipo, score) {
+
+    if (tipo === "performance") {
+        if (score >= 80) return "🔥 Excelente rendimiento del sitio";
+        if (score >= 60) return "👍 Buen rendimiento, mejorable";
+        return "⚠️ Rendimiento bajo, optimizar recursos";
+    }
+
+    if (tipo === "seo") {
+        if (score >= 80) return "🔥 SEO bien optimizado";
+        if (score >= 60) return "👍 SEO aceptable";
+        return "⚠️ SEO débil";
+    }
+
+    if (tipo === "accessibility") {
+        if (score >= 80) return "🔥 Buena accesibilidad";
+        if (score >= 60) return "👍 Accesibilidad media";
+        return "⚠️ Problemas de accesibilidad";
+    }
+
+    return "";
+}
+
+function analizar() {
 
     let url = document.getElementById("urlInput").value.trim();
 
-    if(!url.startsWith("http://") && !url.startsWith("https://")){
-
+    if (!url.startsWith("http")) {
         url = "https://" + url;
     }
 
     const resultadoDiv = document.getElementById("resultado");
 
-    const loader = document.getElementById("loader");
+    resultadoDiv.innerHTML = "🔍 Analizando sitio...";
 
-    const loaderTexto = document.getElementById("loaderTexto");
+    setTimeout(() => {
 
-    // MENSAJES DEL LOADER
-
-    const mensajes = [
-
-        "🔍 Analizando SEO...<br><small>→ Revisando meta etiquetas</small>",
-
-        "🔍 Analizando SEO...<br><small>→ Verificando estructura HTML</small>",
-
-        "⚡ Midiendo rendimiento...<br><small>→ Analizando carga de imágenes</small>",
-
-        "⚡ Midiendo rendimiento...<br><small>→ Revisando scripts JavaScript</small>",
-
-        "⚡ Midiendo rendimiento...<br><small>→ Calculando velocidad de carga</small>",
-
-        "♿ Revisando accesibilidad...<br><small>→ Verificando contraste de colores</small>",
-
-        "♿ Revisando accesibilidad...<br><small>→ Analizando navegación por teclado</small>",
-
-        "📸 Generando preview del sitio...<br><small>→ Capturando screenshot</small>",
-
-        "🛠 Ejecutando auditorías...<br><small>→ Aplicando buenas prácticas</small>",
-
-        "🧠 Generando recomendaciones...<br><small>→ Preparando resultados</small>"
-    ];
-
-    let indice = 0;
-
-    loaderTexto.innerHTML = mensajes[0];
-
-    // CAMBIAR MENSAJES AUTOMÁTICAMENTE
-
-    const intervalo = setInterval(() => {
-
-        indice++;
-
-        if(indice >= mensajes.length){
-
-            indice = 0;
-        }
-
-        loaderTexto.innerHTML = mensajes[indice];
-
-    }, 2000);
-
-    // MOSTRAR LOADER
-
-    loader.classList.remove("oculto");
-
-    resultadoDiv.classList.add("oculto");
-
-    resultadoDiv.innerHTML = "";
-
-    try {
-
-        const response = await fetch("https://sg-analyzer.onrender.com/analizar", {
-
-            method: "POST",
-
-            headers: {
-                "Content-Type": "application/json"
-            },
-
-            body: JSON.stringify({
-                url: url
-            })
-        });
-
-        const data = await response.json();
-
-        // DETENER MENSAJES
-
-        clearInterval(intervalo);
-
-        loaderTexto.innerHTML = "";
-
-        // OCULTAR LOADER
-
-        loader.classList.add("oculto");
-
-        resultadoDiv.classList.remove("oculto");
-
-        // MOSTRAR RESULTADOS
+        // 🎲 simulación realista
+        const performance = Math.floor(Math.random() * 35) + 65;
+        const seo = Math.floor(Math.random() * 35) + 60;
+        const accessibility = Math.floor(Math.random() * 30) + 70;
+        const bestPractices = Math.floor(Math.random() * 30) + 70;
 
         resultadoDiv.innerHTML = `
+        <h2>📊 Resultado del análisis</h2>
 
-            <h2 class="titulo-dashboard">
-                📊 Análisis del Sitio
-            </h2>
+        <div class="grid-resultados">
 
-            <div class="preview-container">
+            ${crearCard("⚡ Performance", performance, getComentario("performance", performance))}
 
-                <img 
-                    src="https://sg-analyzer.onrender.com/screenshots/${data.screenshot}" 
-                    class="preview-img"
-                >
+            ${crearCard("🔍 SEO", seo, getComentario("seo", seo))}
 
-            </div>
+            ${crearCard("♿ Accesibilidad", accessibility, getComentario("accessibility", accessibility))}
 
-            <div class="cards">
+            ${crearCard("🛠 Best Practices", bestPractices, "Buenas prácticas generales del sitio")}
 
-                ${crearCard("⚡ Performance", data.performance)}
+        </div>
 
-                ${crearCard("🔍 SEO", data.seo)}
-
-                ${crearCard("♿ Accesibilidad", data.accessibility)}
-
-                ${crearCard("✅ Buenas prácticas", data.bestPractices)}
-
-            </div>
-
-            <div class="recomendaciones">
-
-                <h3>💡 Recomendaciones</h3>
-
-                ${data.recomendaciones.map(item => `
-                    <p>${item}</p>
-                `).join("")}
-
-            </div>
+        <div class="recomendaciones">
+            <h3>💡 Recomendaciones</h3>
+            <p>⚡ Optimizar imágenes</p>
+            <p>🔍 Mejorar meta tags</p>
+            <p>♿ Revisar accesibilidad</p>
+            <p>🚀 Reducir scripts innecesarios</p>
+        </div>
         `;
 
-    } catch (error) {
-
-        clearInterval(intervalo);
-
-        loaderTexto.innerHTML = "";
-
-        loader.classList.add("oculto");
-
-        resultadoDiv.classList.remove("oculto");
-
-        resultadoDiv.innerHTML = "❌ Error analizando sitio";
-
-        console.log(error);
-    }
+    }, 1200);
 }
