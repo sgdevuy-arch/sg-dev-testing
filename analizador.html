@@ -8,6 +8,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="nuevo1.css">
+	<script src="app.js"></script>
 </head>
 
 <body>
@@ -37,6 +38,8 @@
 		<a href="analizador.html">SG Analyzer</a>
 
         <a href="contacto.html">Contacto</a>
+		
+		
 
        
 
@@ -56,56 +59,22 @@ function toggleMenu() {
 }
 </script>
 
-<!-- CONTACTO -->
-<section class="services" id="contacto">
+<<div class="analizador">
 
-    <h2>Contacto</h2>
+    <h2>Analiza tu sitio web</h2>
 
-    <p>
-        Estamos listos para ayudarte con desarrollo web,
-        testing de software y soluciones digitales.
-    </p>
+    <input type="text" id="urlInput" placeholder="https://tusitio.com">
 
-    <div class="cards">
+    <button onclick="analizar()">Analizar</button>
+<div id="loader" class="loader oculto"></div>
 
-        <div class="card">
+<p id="loaderTexto" class="loader-texto"></p>
 
-            <h3>📧 Email</h3>
+<div id="resultado" class="glass oculto"></div>
 
-            <p>
-                <a href="mailto:sgdev.uy@gmail.com">
-                    sgdev.uy@gmail.com
-                </a>
-            </p>
+    <div id="resultado"></div>
 
-        </div>
-
-        <div class="card">
-
-            <h3>📱 WhatsApp</h3>
-
-            <p>+598 91 041 567</p>
-            
-            <a href="https://wa.me/59891041567" target="_blank" class="btn">
-                Escribir por WhatsApp
-            </a>
-
-        </div>
-
-        <div class="card">
-		 <h3>📱 WhatsApp</h3>
-
-             <p>+598 99 318 088</p>
-
-            <a href="https://wa.me/59891041567" target="_blank" class="btn">
-                Escribir por WhatsApp
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
+</div>
 
 <!-- FOOTER -->
 <footer>
