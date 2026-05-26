@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="nuevo1.css">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <body>
 
@@ -44,11 +45,27 @@
     </div>
 
     <p id="loaderTexto" class="loader-texto"></p>
-
+ <h3 class="titulo-graficos">📊 Análisis detallado del sitio</h3>
     <div id="resultado" class="glass oculto"></div>
+
+   
+
+<div class="grid-graficos">
+
+    <canvas id="chartPerformance"></canvas>
+    <canvas id="chartSEO"></canvas>
+    <canvas id="chartAccessibility"></canvas>
+
+    <canvas id="chartHTML"></canvas>
+    <canvas id="chartCSS"></canvas>
+    <canvas id="chartImages"></canvas>
+    
 
 </div>
 
+</div>
+<div id="recomendaciones"></div>
+<div id="problemas" class="problemas-box"></div>
 <!-- FOOTER -->
 <footer>
     © 2026 SG Dev & Testing
