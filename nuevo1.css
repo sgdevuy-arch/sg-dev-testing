@@ -1590,3 +1590,456 @@ button:hover{
         font-size: 2.2rem;
     }
 }
+/* =========================
+   🚨 PROBLEM CARDS
+========================= */
+
+.problem-card{
+
+    background: rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    border-radius:16px;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    transition:0.3s ease;
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.25);
+}
+
+.problem-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 0 25px rgba(0,255,136,0.15);
+}
+
+.problem-card.alto{
+
+    border-left:5px solid #ff4d4d;
+}
+
+.problem-card.medio{
+
+    border-left:5px solid #ffc107;
+}
+
+.problem-card.bajo{
+
+    border-left:5px solid #00ff88;
+}
+
+.problem-badge{
+
+    display:inline-block;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    margin-bottom:12px;
+
+    background:#222;
+}
+
+.problem-card.alto .problem-badge{
+    color:#ff4d4d;
+}
+
+.problem-card.medio .problem-badge{
+    color:#ffc107;
+}
+
+.problem-card.bajo .problem-badge{
+    color:#00ff88;
+}
+/* =========================
+   ✨ SCORE ANIMATION
+========================= */
+
+.score{
+
+    animation: pulseScore 2s infinite;
+
+    transition:0.3s;
+}
+
+@keyframes pulseScore{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.08);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+.bar{
+
+    animation: fillBar 1.5s ease;
+}
+
+@keyframes fillBar{
+
+    from{
+        width:0;
+    }
+}
+/* =========================
+   🎴 CARDS PREMIUM
+========================= */
+
+.card{
+
+    background: rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    transition:0.3s;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-50%;
+
+    left:-50%;
+
+    width:200%;
+
+    height:200%;
+
+    background:
+        linear-gradient(
+            45deg,
+            transparent,
+            rgba(255,255,255,0.03),
+            transparent
+        );
+
+    transform:rotate(25deg);
+
+    transition:0.6s;
+}
+
+.card:hover::before{
+
+    left:100%;
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 0 30px rgba(0,255,136,0.12);
+}
+/* =========================
+   🧪 TESTING BOX
+========================= */
+
+.testing-box{
+
+    margin-top:40px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(0,255,136,0.08),
+            rgba(255,255,255,0.03)
+        );
+
+    border:1px solid rgba(0,255,136,0.15);
+
+    border-radius:20px;
+
+    padding:25px;
+}
+
+.testing-item{
+
+    padding:12px 0;
+
+    border-bottom:1px solid rgba(255,255,255,0.05);
+
+    color:#ddd;
+}
+
+.testing-item.warning{
+
+    color:#ffc107;
+}
+/* =========================
+   🚀 LOADER PREMIUM
+========================= */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#050505;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:9999;
+}
+
+.loader-box{
+
+    text-align:center;
+}
+
+.spinner{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    border:4px solid rgba(255,255,255,0.1);
+
+    border-top:4px solid #00ff88;
+
+    animation:spin 1s linear infinite;
+
+    margin:auto;
+}
+
+@keyframes spin{
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+#loaderTexto{
+
+    margin-top:25px;
+
+    color:#fff;
+
+    font-size:18px;
+
+    animation:pulseText 1.5s infinite;
+}
+
+@keyframes pulseText{
+
+    0%{
+        opacity:0.5;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0.5;
+    }
+}
+.oculto{
+    display:none !important;
+}
+/* =========================
+   💡 RECOMENDACIONES
+========================= */
+
+/* =========================
+   💡 RECOMENDACIONES
+========================= */
+
+.recomendaciones{
+
+    width:95%;
+
+    margin:0 auto;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(0,255,136,0.08),
+            rgba(255,255,255,0.03)
+        );
+
+    border:1px solid rgba(0,255,136,0.15);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-sizing:border-box;
+}
+
+.recomendaciones h3{
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+    color:#00ff88;
+
+    text-align:center;
+}
+/* =========================
+   💡 RECOMENDACIONES FIX
+========================= */
+
+.bottom-sections{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.recomendaciones{
+
+    width:95% !important;
+
+    max-width:1400px !important;
+
+    display:block !important;
+
+    flex:none !important;
+
+    grid-column:1 / -1;
+
+    margin-top:40px;
+
+    padding:35px;
+
+    box-sizing:border-box;
+}
+
+.cta-box{
+
+    width:95% !important;
+
+    max-width:1400px !important;
+
+    display:block !important;
+
+    flex:none !important;
+
+    margin-top:20px;
+
+    box-sizing:border-box;
+}
+
+.recomendaciones ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+}
+
+.recomendaciones li{
+
+    padding:16px 0;
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.05);
+
+    color:#ddd;
+
+    font-size:17px;
+
+    transition:0.3s;
+}
+
+.recomendaciones li:hover{
+
+    padding-left:10px;
+
+    color:#fff;
+}
+
+.recomendaciones li:last-child{
+
+    border-bottom:none;
+}
+.recomendaciones h3{
+
+    font-size:32px;
+
+    margin-bottom:30px;
+
+    color:#00ff88;
+}
+
+.recomendaciones ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+}
+
+.recomendaciones li{
+
+    padding:18px 0;
+
+    font-size:18px;
+
+    color:#ddd;
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.05);
+
+    transition:0.3s;
+}
+
+.recomendaciones li:hover{
+
+    transform:scale(1.02);
+
+    color:#fff;
+}
+
+.recomendaciones li:last-child{
+
+    border-bottom:none;
+}
