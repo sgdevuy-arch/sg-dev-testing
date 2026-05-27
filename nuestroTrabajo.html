@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-   <link rel="stylesheet" href="nuevo1.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nuestro Trabajo - SG Dev & Testing</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Nuestros Proyectos | Desarrollo Web y Testing - SG Dev & Testing</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Conocé nuestros proyectos en desarrollo web, testing de software y soluciones digitales creadas por SG Dev & Testing en Uruguay.">
+    <meta name="keywords" content="proyectos desarrollo web, testing software, SG Dev, diseño web Uruguay, sistemas digitales">
+    <meta name="author" content="SG Dev & Testing">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nuestros Proyectos - SG Dev & Testing">
+    <meta property="og:description" content="Soluciones digitales, desarrollo web y testing de software para empresas.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:url" content="https://sgdevuy-arch.github.io/sg-dev-testing/nuestroTrabajo.html">
+
+    <link rel="stylesheet" href="nuevo1.css">
 </head>
-
-
- 
-
 
 <body>
 
@@ -38,29 +51,26 @@
         <a href="servicios.html">Servicios</a>
 		
 		<a href="analizador.html">SG Analyzer</a>
+		 <a href="nosotros.html">Sobre Nosotros</a>
 
         <a href="contacto.html">Contacto</a>
 		
-		
+	
 
        
 
     </nav>
 
 </header>
+
 <script>
 function toggleMenu() {
-    document.getElementById("nav").classList.toggle("active");
+    document.getElementById("nav-links").classList.toggle("active");
 }
 </script>
-<script>
-<script>
-function toggleMenu() {
-    document.getElementById("nav").classList.toggle("active");
-}
-</script>
-<!-- 🔒 CONTENEDOR PRINCIPAL -->
-<div class="sg-trabajo">
+
+<!-- CONTENIDO PRINCIPAL -->
+<main class="sg-trabajo">
 
 <header>
     <h1>Nuestro Trabajo</h1>
@@ -70,51 +80,48 @@ function toggleMenu() {
 <div class="container">
 
     <h2>Proyectos Realizados</h2>
+
     <p class="descripcion">
         En SG Dev & Testing desarrollamos soluciones digitales enfocadas en mejorar la eficiencia, 
         organización y presencia online de nuestros clientes.
     </p>
 
     <!-- PROYECTO 1 -->
-    <div class="card-trabajo">
-        <img src="trabajo2.jpeg">
+    <article class="card-trabajo">
+        <img src="trabajo2.jpeg" alt="Sistema de gestión de espacios públicos">
         <div class="card-content">
             <h3>Sistema de Gestión de Espacios Públicos</h3>
-            <p>
-                Desarrollo de una aplicación para la gestión de memos y control de actividades.
-            </p>
+            <p>Desarrollo de una aplicación para la gestión de memos y control de actividades.</p>
         </div>
-    </div>
+    </article>
 
     <!-- PROYECTO 2 -->
-    <div class="card-trabajo">
-        <img class="trabajo"src="trabajo1.png">
+    <article class="card-trabajo">
+        <img class="trabajo" src="trabajo1.png" alt="Sitio web institucional desarrollado">
         <div class="card-content">
             <h3>Sitio Web Institucional</h3>
-            <p>
-                Diseño de un sitio moderno para mejorar la presencia digital.
-            </p>
+            <p>Diseño de un sitio moderno para mejorar la presencia digital.</p>
         </div>
-    </div>
+    </article>
 
     <!-- PROYECTO 3 -->
-    <div class="card-trabajo">
-        <img src="trabajo3.png">
+    <article class="card-trabajo">
+        <img src="trabajo3.png" alt="Testing de software y control de calidad">
         <div class="card-content">
             <h3>Testing de Software</h3>
-            <p>
-                Pruebas y control de calidad para mejorar estabilidad.
-            </p>
+            <p>Pruebas y control de calidad para mejorar estabilidad.</p>
         </div>
-    </div>
+    </article>
 
 </div>
 
+</main>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 SG Dev & Testing</p>
+    <p>Desarrollo web en Uruguay | SG Dev & Testing</p>
+    © 2026 SG Dev & Testing
 </footer>
-
-</div>
 
 </body>
 </html>

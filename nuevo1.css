@@ -2043,3 +2043,83 @@ button:hover{
 
     border-bottom:none;
 }
+.grid-about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* SECCIÓN EQUIPO */
+.team-section {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+
+    justify-content: center;
+    align-items: stretch;
+
+    max-width: 1000px;
+    margin: 0 auto; /* 👈 ESTO LAS CENTRA */
+}
+.about-blocks {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-item {
+    background: linear-gradient(135deg, #1a1a1a, #111);
+    padding: 25px;
+    border-radius: 12px;
+
+    border-left: 4px solid #00ff88;
+
+    transition: 0.3s ease;
+
+    text-align: left;
+}
+
+.about-item:hover {
+    transform: translateX(5px);
+    border-left: 4px solid #00bfff;
+}
+
+.about-item h3 {
+    margin-bottom: 10px;
+}
+
+.about-item p {
+    opacity: 0.85;
+    line-height: 1.5;
+}

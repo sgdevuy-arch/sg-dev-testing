@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
-    <title>SG Analyzer | Testing y análisis de sitios web - SG Dev</title>
+    <!-- SEO PRINCIPAL -->
+    <title>SG Analyzer | Auditoría SEO, rendimiento y análisis web gratis</title>
 
-    <meta name="description" content="SG Analyzer es una herramienta de testing y análisis web creada por SG Dev para analizar rendimiento, SEO, accesibilidad y optimización de sitios web." />
+    <meta name="description" content="Analiza gratis tu sitio web con SG Analyzer. Evalúa SEO, velocidad, accesibilidad, HTML, CSS y rendimiento en segundos con informes profesionales.">
 
-    <meta name="keywords" content="SG Analyzer, testing web, análisis SEO, performance web, optimización web, accesibilidad web, auditoría web" />
+    <meta name="keywords" content="SG Analyzer, auditoría SEO, análisis web gratis, performance web, optimización SEO, testing web, velocidad web, accesibilidad web">
 
-    <meta name="author" content="SG Dev" />
+    <meta name="author" content="SG Dev & Testing">
 
     <meta name="robots" content="index, follow">
 
     <meta name="language" content="es">
 
     <!-- OPEN GRAPH -->
-    <meta property="og:title" content="SG Analyzer | Testing y análisis web">
-
-    <meta property="og:description" content="Herramienta profesional para analizar rendimiento, SEO y calidad de sitios web.">
-
+    <meta property="og:title" content="SG Analyzer | Auditoría SEO y rendimiento web">
+    <meta property="og:description" content="Analiza SEO, velocidad y calidad de cualquier sitio web en segundos con SG Analyzer.">
     <meta property="og:type" content="website">
-
     <meta property="og:url" content="https://sgdevuy-arch.github.io/sg-dev-testing/analizador.html">
-
     <meta property="og:image" content="https://sgdevuy-arch.github.io/sg-dev-testing/logo2.png">
 
     <!-- TWITTER -->
     <meta name="twitter:card" content="summary_large_image">
-
-    <meta name="twitter:title" content="SG Analyzer">
-
-    <meta name="twitter:description" content="Analiza rendimiento, SEO y accesibilidad de cualquier sitio web.">
-
+    <meta name="twitter:title" content="SG Analyzer - Auditoría web">
+    <meta name="twitter:description" content="Analiza SEO, rendimiento y accesibilidad de cualquier web en segundos.">
     <meta name="twitter:image" content="https://sgdevuy-arch.github.io/sg-dev-testing/logo2.png">
 
     <!-- CSS -->
@@ -43,7 +39,6 @@
 
     <!-- CHART -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 </head>
 
 <body>
@@ -51,12 +46,17 @@
 <!-- NAVBAR -->
 <header class="navbar">
 
+    <!-- LOGO -->
     <div class="logo">
         SG <span>Dev & Testing</span>
     </div>
 
-    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <!-- BOTÓN MOBILE -->
+    <button class="menu-toggle" id="menu-toggle">
+        ☰
+    </button>
 
+    <!-- LINKS -->
     <nav class="nav-links" id="nav-links">
 
         <a href="index.html">Inicio</a>
@@ -64,38 +64,42 @@
         <a href="nuestroTrabajo.html">Proyectos</a>
 
         <a href="servicios.html">Servicios</a>
-
-        <a href="analizador.html">SG Analyzer</a>
+		
+		<a href="analizador.html">SG Analyzer</a>
+		 <a href="nosotros.html">Sobre Nosotros</a>
 
         <a href="contacto.html">Contacto</a>
+		
+	
+
+       
 
     </nav>
 
 </header>
 
 <!-- ANALIZADOR -->
-<div class="analizador">
+<main class="analizador">
 
-    <!-- TEXTO SEO -->
-    <div class="analyzer-hero">
+    <!-- HERO SEO -->
+    <section class="analyzer-hero">
 
-        <h1>SG Analyzer</h1>
+        <h1>Analiza tu sitio web y mejora tu SEO gratis</h1>
 
         <p>
-            Analiza rendimiento, SEO, accesibilidad y optimización de cualquier sitio web en segundos.
+            Evalúa rendimiento, SEO, accesibilidad, HTML y optimización web en segundos con SG Analyzer.
         </p>
 
-    </div>
+    </section>
 
-    <h2>Analiza tu sitio web</h2>
+    <h2>Analizador de sitios web</h2>
 
     <div class="input-analyzer">
 
-    <input type="text" id="urlInput" placeholder="https://tusitio.com">
+        <input type="text" id="urlInput" placeholder="https://tusitio.com">
+        <button onclick="analizar()">Analizar</button>
 
-    <button onclick="analizar()">Analizar</button>
-
-</div>
+    </div>
 
     <div id="loader" class="loader oculto">
         🔍 Analizando...
@@ -104,7 +108,7 @@
     <p id="loaderTexto" class="loader-texto"></p>
 
     <h3 class="titulo-graficos">
-        📊 Análisis detallado del sitio
+        📊 Resultados del análisis SEO
     </h3>
 
     <div id="resultado" class="glass oculto"></div>
@@ -112,27 +116,23 @@
     <div class="grid-graficos">
 
         <canvas id="chartPerformance"></canvas>
-
         <canvas id="chartSEO"></canvas>
-
         <canvas id="chartAccessibility"></canvas>
-
         <canvas id="chartHTML"></canvas>
-
         <canvas id="chartCSS"></canvas>
-
         <canvas id="chartImages"></canvas>
 
     </div>
 
-</div>
+</main>
 
-<div id="recomendaciones"></div>
-
-<div id="problemas" class="problemas-box"></div>
+<!-- RESULTADOS -->
+<section id="recomendaciones"></section>
+<section id="problemas" class="problemas-box"></section>
 
 <!-- FOOTER -->
 <footer>
+    <p>Herramienta de auditoría SEO | SG Dev & Testing</p>
     © 2026 SG Dev & Testing
 </footer>
 

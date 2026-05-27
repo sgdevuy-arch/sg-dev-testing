@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contacto - SG Dev & Testing</title>
+    <title>Contacto | Desarrollo Web y Testing - SG Dev & Testing Uruguay</title>
+
+    <!-- SEO -->
+    <meta name="description" content="SG Dev & Testing - Desarrollo web, testing de software y soluciones digitales para empresas. Mejoramos tu presencia online y rendimiento web.">
+    <meta name="keywords" content="desarrollo web Uruguay, testing software, páginas web, SEO, SG Dev, diseño web, optimización web">
+    <meta name="author" content="SG Dev & Testing">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contacto - SG Dev & Testing">
+    <meta property="og:description" content="Contactanos para desarrollo web, testing y soluciones digitales.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="favicon.png">
+    <meta property="og:url" content="https://sgdevuy-arch.github.io/sg-dev-testing/contacto.html">
 
     <!-- CSS -->
     <link rel="stylesheet" href="nuevo1.css">
@@ -35,79 +52,74 @@
         <a href="servicios.html">Servicios</a>
 		
 		<a href="analizador.html">SG Analyzer</a>
+		 <a href="nosotros.html">Sobre Nosotros</a>
 
         <a href="contacto.html">Contacto</a>
+		
+	
 
        
 
     </nav>
 
 </header>
-<script>
-function toggleMenu() {
-    document.getElementById("nav").classList.toggle("active");
-}
-</script>
-<script>
 
 <script>
 function toggleMenu() {
-    document.getElementById("nav").classList.toggle("active");
+    document.getElementById("nav-links").classList.toggle("active");
 }
 </script>
 
 <!-- CONTACTO -->
-<section class="services" id="contacto">
+<main class="services" id="contacto">
 
-    <h2>Contacto</h2>
+    <h1>Contacto</h1>
 
     <p>
         Estamos listos para ayudarte con desarrollo web,
         testing de software y soluciones digitales.
     </p>
-<div class="cards">
 
-    <div class="card">
+    <div class="cards">
 
-        <h3>📧 Email</h3>
+        <div class="card">
 
-        <p>sgdev.uy@gmail.com</p>
+            <h3>📧 Email</h3>
+            <p>sgdev.uy@gmail.com</p>
 
+            <a href="https://mail.google.com/mail/?view=cm&to=sgdev.uy@gmail.com" target="_blank" class="btn">
+                Abrir en Gmail
+            </a>
 
+        </div>
 
-<a href="https://mail.google.com/mail/?view=cm&to=sgdev.uy@gmail.com" target="_blank" class="btn">
-    Abrir en Gmail
-</a>
+        <div class="card">
+
+            <h3>📱 WhatsApp</h3>
+            <p>+598 91 041 567</p>
+
+            <a href="https://wa.me/59891041567" target="_blank" class="btn">
+                Escribir por WhatsApp
+            </a>
+
+        </div>
+
+        <div class="card">
+
+            <h3>📱 WhatsApp</h3>
+            <p>+598 99 318 088</p>
+
+            <a href="https://wa.me/598990318088" target="_blank" class="btn">
+                Escribir por WhatsApp
+            </a>
+
+        </div>
+
     </div>
 
-    <div class="card">
+</main>
 
-        <h3>📱 WhatsApp</h3>
-
-        <p>+598 91 041 567</p>
-        
-        <a href="https://wa.me/59891041567" target="_blank" class="btn">
-            Escribir por WhatsApp
-        </a>
-
-    </div>
-
-    <div class="card">
-
-        <h3>📱 WhatsApp</h3>
-
-        <p>+598 99 318 088</p>
-
-        <a href="https://wa.me/598990318088" target="_blank" class="btn">
-            Escribir por WhatsApp
-        </a>
-
-    </div>
-
-</div>
-
-
-</section>
+<!-- FORMULARIO -->
 <div class="contact-section">
 
     <div class="contact-box">
@@ -118,9 +130,7 @@ function toggleMenu() {
         <form action="mailto:sgdev.uy@gmail.com" method="post" enctype="text/plain" class="contact-form">
 
             <input type="text" name="nombre" placeholder="Tu nombre" required>
-
             <input type="email" name="email" placeholder="Tu correo" required>
-
             <textarea name="mensaje" placeholder="Tu mensaje..." rows="5" required></textarea>
 
             <button type="submit" class="btn">
@@ -132,9 +142,10 @@ function toggleMenu() {
     </div>
 
 </div>
- </br>
+
 <!-- FOOTER -->
 <footer>
+    <p>Desarrollo web en Uruguay | SG Dev & Testing</p>
     © 2026 SG Dev & Testing - Todos los derechos reservados
 </footer>
 
