@@ -24,6 +24,9 @@
     <meta property="og:url" content="https://sgdevuy-arch.github.io/sg-dev-testing/nuestroTrabajo.html">
 
     <link rel="stylesheet" href="nuevo1.css">
+	<!-- ICONOS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -70,58 +73,100 @@ function toggleMenu() {
 </script>
 
 <!-- CONTENIDO PRINCIPAL -->
+
 <main class="sg-trabajo">
 
-<header>
-    <h1>Nuestro Trabajo</h1>
-    <p>Soluciones digitales confiables para empresas</p>
-</header>
+    <!-- 1. HEADER HERO: Centrado en Desarrollo Web y Soluciones Digitales -->
+    <header class="hero-testing" style="padding: 60px 20px 40px 20px;">
+        <div class="container">
+            <span class="badge-tech">💻 PORTAFOLIO</span>
+            <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 15px;">Nuestro Trabajo</h1>
+            <p class="subtitle" style="max-width: 650px; margin: 0 auto;">Explorá los sitios web, aplicaciones y sistemas a medida que hemos desarrollado para transformar la presencia y administración de nuestros clientes.</p>
+        </div>
+    </header>
 
-<div class="container">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
+        
+        <!-- REJILLA DE PROYECTOS REALIZADOS (Forzada a 2x2 en pantallas grandes) -->
+<div class="grid-servicios-portfolio" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-bottom: 60px; max-width: 1000px; margin-left: auto; margin-right: auto;">
 
-    <h2>Proyectos Realizados</h2>
-
-    <p class="descripcion">
-        En SG Dev & Testing desarrollamos soluciones digitales enfocadas en mejorar la eficiencia, 
-        organización y presencia online de nuestros clientes.
-    </p>
-
-    <!-- PROYECTO 1 -->
-    <article class="card-trabajo">
-        <img src="trabajo2.jpeg" alt="Sistema de gestión de espacios públicos">
-        <div class="card-content">
-            <h3>Sistema de Gestión de Espacios Públicos</h3>
-            <p>Desarrollo de una aplicación para la gestión de memos y control de actividades.</p>
+    <!-- PROYECTO 1: Sitio Web Institucional -->
+    <article class="card-mini" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+        <div class="img-container" style="width: 100%; height: 240px; overflow: hidden; background: rgba(0,0,0,0.2); border-bottom: 1px solid rgba(255,255,255,0.05); padding: 15px; display: flex; align-items: center; justify-content: center;">
+            <img class="trabajo" src="trabajo1.png" alt="Captura de pantalla de Sitio Web Institucional" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        </div>
+        <div class="card-content" style="padding: 25px; flex-grow: 1;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 10px; color: var(--text-main);">Diseño y Desarrollo de Sitio Web</h3>
+            <p style="font-size: 0.95rem; opacity: 0.75; line-height: 1.5;">Desarrollo de un sitio web moderno, rápido y adaptivo (Mobile First), optimizado para mejorar el posicionamiento y la identidad digital.</p>
         </div>
     </article>
 
-    <!-- PROYECTO 2 -->
-    <article class="card-trabajo">
-        <img class="trabajo" src="trabajo1.png" alt="Sitio web institucional desarrollado">
-        <div class="card-content">
-            <h3>Sitio Web Institucional</h3>
-            <p>Diseño de un sitio moderno para mejorar la presencia digital.</p>
+    <!-- PROYECTO 2: Sistema de Gestión de Espacios Públicos -->
+    <article class="card-mini" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+        <div class="img-container" style="width: 100%; height: 240px; overflow: hidden; background: rgba(0,0,0,0.2); border-bottom: 1px solid rgba(255,255,255,0.05); padding: 15px; display: flex; align-items: center; justify-content: center;">
+            <img src="trabajo2.jpeg" alt="Captura de pantalla de Sistema de Gestión" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        </div>
+        <div class="card-content" style="padding: 25px; flex-grow: 1;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 10px; color: var(--text-main);">Sistema de Gestión y Digitalización</h3>
+            <p style="font-size: 0.95rem; opacity: 0.75; line-height: 1.5;">Plataforma web a medida para la administración de memos internos, flujo de tareas analógicas y control de actividades operativas.</p>
         </div>
     </article>
 
-    <!-- PROYECTO 3 -->
-    <article class="card-trabajo">
-        <img src="trabajo3.png" alt="Testing de software y control de calidad">
-        <div class="card-content">
-            <h3>Testing de Software</h3>
-            <p>Pruebas y control de calidad para mejorar estabilidad.</p>
+    <!-- PROYECTO 3: Testing de Software -->
+    <article class="card-mini" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+        <div class="img-container" style="width: 100%; height: 240px; overflow: hidden; background: rgba(0,0,0,0.2); border-bottom: 1px solid rgba(255,255,255,0.05); padding: 15px; display: flex; align-items: center; justify-content: center;">
+            <img src="trabajo3.png" alt="Captura de pantalla de Testing de software" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        </div>
+        <div class="card-content" style="padding: 25px; flex-grow: 1;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 10px; color: var(--text-main);">Aseguramiento de Calidad & Testing</h3>
+            <p style="font-size: 0.95rem; opacity: 0.75; line-height: 1.5;">Auditoría integral y pruebas funcionales en plataformas de software para asegurar un rendimiento impecable y libre de errores antes de su lanzamiento.</p>
+        </div>
+    </article>
+
+    <!-- PROYECTO 4: SG Gestión Fácil -->
+    <article class="card-mini" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+        <div class="img-container" style="width: 100%; height: 240px; overflow: hidden; background: rgba(0,0,0,0.2); border-bottom: 1px solid rgba(255,255,255,0.05); padding: 15px; display: flex; align-items: center; justify-content: center; gap: 12px;">
+            <img src="1.jpeg" alt="Captura 1 SG Gestión Fácil" style="max-width: 45%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.4);">
+            <img src="5.jpeg" alt="Captura 2 SG Gestión Fácil" style="max-width: 45%; max-height: 100%; object-fit: contain; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.4); margin-top: 15px;">
+        </div>
+        <div class="card-content" style="padding: 25px; flex-grow: 1;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 10px; color: var(--text-main);">SG Gestión Fácil (App Android)</h3>
+            <p style="font-size: 0.95rem; opacity: 0.75; line-height: 1.5;">Aplicación móvil diseñada para la optimización contable de comercios, centralizando el control de deudores, proveedores e ingresos diarios.</p>
         </div>
     </article>
 
 </div>
 
-</main>
 
+    </div>
+</main>
 <!-- FOOTER -->
 <footer>
     <p>Desarrollo web en Uruguay | SG Dev & Testing</p>
     © 2026 SG Dev & Testing
 </footer>
+<div class="social-sidebar">
 
+    <a href="https://wa.me/59891041567"
+       target="_blank"
+       class="social-btn whatsapp">
+
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=61590281644163"
+       target="_blank"
+       class="social-btn facebook">
+
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://instagram.com/sgdev.uy/"
+       target="_blank"
+       class="social-btn instagram">
+
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
 </body>
 </html>

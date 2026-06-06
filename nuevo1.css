@@ -196,9 +196,6 @@ img{
     position:relative;
 }
 
-/* =========================
-   HERO LOGO
-========================= */
 
 /* =========================
    LOGO HERO
@@ -1466,18 +1463,14 @@ button:hover{
 /* TITULO */
 
 .services h2 {
+	text-align:center;
 
-    text-align: center;
+    font-size:2.8rem;
 
-    font-size: 2.8rem;
+    margin-bottom:20px;
 
-    margin-bottom: 15px;
+    color:white;
 
-    background: linear-gradient(90deg, #ffffff, #60A5FA);
-
-    -webkit-background-clip: text;
-
-    -webkit-text-fill-color: transparent;
 }
 
 /* INTRO */
@@ -2122,4 +2115,504 @@ button:hover{
 .about-item p {
     opacity: 0.85;
     line-height: 1.5;
+}
+/* CONTENEDOR MISIÓN Y VISIÓN */
+
+.mision-vision {
+    display: flex;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.objetivo,
+.vision {
+    flex: 1;
+    background: #161b22;
+    border: 1px solid #00c853;
+    border-radius: 12px;
+    padding: 35px;
+    transition: 0.3s ease;
+}
+
+.objetivo:hover,
+.vision:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 200, 83, 0.25);
+}
+
+.objetivo h2,
+.vision h2 {
+    	text-align:center;
+
+    font-size:2.8rem;
+
+    margin-bottom:20px;
+
+    color:white;
+
+	
+}
+
+.objetivo p,
+.vision p {
+    color: #d0d0d0;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .mision-vision {
+        flex-direction: column;
+    }
+
+}
+
+/* BARRA SOCIAL FLOTANTE */
+
+.social-sidebar{
+    position:fixed;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    z-index:9999;
+}
+
+.social-btn{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+    font-size:24px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+
+    transition:.3s;
+}
+
+.social-btn:hover{
+    transform:scale(1.12);
+}
+
+/* COLORES OFICIALES */
+
+.whatsapp{
+    background:#25D366;
+}
+
+.facebook{
+    background:#1877F2;
+}
+
+.instagram{
+    background:linear-gradient(
+        45deg,
+        #f09433,
+        #e6683c,
+        #dc2743,
+        #cc2366,
+        #bc1888
+    );
+}
+
+.email{
+    background:#00c853;
+}
+
+/* MÓVILES */
+
+@media(max-width:768px){
+
+    .social-sidebar{
+        left:10px;
+    }
+
+    .social-btn{
+        width:45px;
+        height:45px;
+        font-size:20px;
+    }
+
+}
+.why-us{
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+
+
+.benefits-list{
+    list-style:none;
+    padding:0;
+}
+
+.benefits-list li{
+    background:#161b22;
+    border-left:4px solid #00c853;
+    margin-bottom:15px;
+    padding:18px 20px;
+    border-radius:8px;
+    color:#e0e0e0;
+    font-size:1.05rem;
+    transition:.3s;
+}
+
+.benefits-list li:hover{
+    transform:translateX(5px);
+    box-shadow:0 0 15px rgba(0,200,83,.2);
+}
+.btn-servicio{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:15px;
+    padding:10px 20px;
+    border:2px solid #00c853;
+    color:#00c853;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-servicio::after{
+    content:"➜";
+}
+
+.btn-servicio:hover{
+    background:#00c853;
+    color:white;
+    box-shadow:0 0 20px rgba(0,200,83,.35);
+}
+.service-content a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:fit-content;
+    margin:20px auto 0;
+}
+.web-service{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    margin:100px 0;
+}
+
+.web-service.reverse{
+    flex-direction:row-reverse;
+}
+
+.web-image{
+    flex:1;
+}
+
+.web-image img{
+    width:100%;
+    border-radius:20px;
+    border:1px solid rgba(96,165,250,.3);
+    box-shadow:0 15px 40px rgba(96,165,250,.15);
+    transition:.4s;
+}
+
+.web-image img:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(96,165,250,.25);
+}
+
+.web-content{
+    flex:1;
+}
+
+.web-content h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+    background:linear-gradient(
+        to right,
+        #ffffff,
+        #60A5FA
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.web-content p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+    font-size:1.05rem;
+}
+
+.web-content ul{
+    list-style:none;
+    padding:0;
+}
+
+.web-content li{
+
+    margin-bottom:12px;
+
+    color:#e2e8f0;
+
+    padding-left:30px;
+
+    position:relative;
+}
+
+.web-content li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:#60A5FA;
+
+    font-weight:bold;
+}
+/* ==========================================
+   SECCIÓN DE TESTING Y QA - IMPACTO VISUAL
+   ========================================== */
+
+
+/* ==========================================
+   SECCIÓN DE TESTING Y QA - ADAPTADO A TU WEB
+   ========================================== */
+
+/* 1. HERO SECTION (Usa tus tonos azul/violeta con un sutil efecto "glass") */
+.hero-testing {
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    background: transparent; /* Permite que se luzca el degradado de tu body */
+}
+
+.badge-tech {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6; /* El azul de tu degradado superior */
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    margin-bottom: 25px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.hero-testing h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+.hero-testing .subtitle {
+    font-size: 1.2rem;
+    max-width: 650px;
+    margin: 0 auto 35px;
+    opacity: 0.85; /* Se adapta dinámicamente a tu color de texto principal */
+}
+
+/* 2. CAJA DE ALERTA (EL PROBLEMA - Estilo tarjeta moderna) */
+.problema-section {
+    padding: 40px 20px;
+}
+
+.alert-box {
+    background: rgba(255, 255, 255, 0.03); /* Fondo translúcido que hereda tu fondo */
+    backdrop-filter: blur(10px); /* Efecto vidrio esmerilado */
+    -webkit-backdrop-filter: blur(10px);
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    border-radius: 16px;
+    border-left: 4px solid #ef4444; /* Rojo bug sutil */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.alert-icon {
+    font-size: 2.2rem;
+    animation: qaPulse 2s infinite;
+}
+
+.alert-box h3 {
+    color: var(--text-main);
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.alert-box p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* 3. REJILLA DE SERVICIOS (Alineado con tus colores 59,130,246 y 139,92,246) */
+.servicios-qa {
+    padding: 80px 20px;
+}
+
+.servicios-qa h2, .beneficios-qa h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--text-main);
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-mini {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 35px 25px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Contenedores de iconos alternando entre tu azul y tu violeta */
+.card-mini [class^="icon-wrap-"] {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+/* Mapeo directo con los colores de tu body */
+.icon-wrap-funcional, .icon-wrap-ux { 
+    background: rgba(59, 130, 246, 0.12); 
+    color: #3b82f6; 
+}
+.icon-wrap-rendimiento, .icon-wrap-mobile { 
+    background: rgba(139, 92, 246, 0.12); 
+    color: #8b5cf6; 
+}
+
+.card-mini h3 {
+    font-size: 1.35rem;
+    color: var(--text-main);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.card-mini p {
+    font-size: 0.95rem;
+    opacity: 0.75;
+    line-height: 1.6;
+}
+
+/* Efecto Hover Premium */
+.card-mini:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(139, 92, 246, 0.2); /* Brillo violeta al pasar el mouse */
+    box-shadow: 0 15px 35px rgba(139, 92, 246, 0.06);
+}
+
+.card-mini:hover [class^="icon-wrap-"] {
+    transform: scale(1.08) rotate(2deg);
+}
+
+/* 4. SECCIÓN CHECKLIST (BENEFICIOS) */
+.beneficios-qa {
+    padding: 80px 20px;
+}
+
+.checklist-container {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.check-item {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 18px 25px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    transition: all 0.25s ease;
+}
+
+.check-item:hover {
+    transform: translateX(6px);
+    border-color: rgba(59, 130, 246, 0.15);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.check-icon {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6); /* Tu azul y tu violeta juntos */
+    color: #ffffff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.check-item div {
+    color: var(--text-main);
+    font-size: 1.05rem;
+}
+
+.check-item strong {
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+/* ANIMACIONES NATIVAS */
+@keyframes qaPulse {
+    0% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.06); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.9; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-testing h1 { font-size: 2.2rem; }
+    .alert-box { flex-direction: column; text-align: center; }
 }
