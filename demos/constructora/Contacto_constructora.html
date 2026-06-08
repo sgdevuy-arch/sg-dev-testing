@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora Demo | Innovación y Solidez</title>
+	 <link rel="stylesheet" href="nuevo1.css">
+
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="logo-container">
+                    <div class="logo">Sólida<span>Estructuras</span></div>
+                </div>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="demo_constructora.html">Inicio</a></li>
+                        <li><a href="Servicios_constructora.html">Servicios</a></li>
+                        <li><a href="nosotros_constructora.html">Nosotros</a></li>
+                        <li><a href="Contacto_constructora.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <!-- Contacto -->
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="contact-header">
+            <span class="section-tag">Contacto</span>
+            <h2>Solicite una Cotización</h2>
+            <p>
+                Nuestro equipo técnico está disponible para analizar su proyecto y brindar una propuesta adaptada a sus necesidades.
+            </p>
+        </div>
+
+        <div class="contact-content">
+
+            <div class="contact-info">
+
+                <h3>Información de Contacto</h3>
+
+                <div class="info-item">
+                    📍 Av. Principal 1234, Montevideo, Uruguay
+                </div>
+
+                <div class="info-item">
+                    📞 +598 99 999 999
+                </div>
+
+                <div class="info-item">
+                    ✉️ contacto@constructorahorizonte.com
+                </div>
+
+                <div class="info-item">
+                    🕒 Lunes a Viernes - 08:00 a 18:00
+                </div>
+
+            </div>
+			 </br>
+			 </br>
+
+
+
+            <form class="contact-form"
+                  onsubmit="event.preventDefault(); alert('Simulación: Solicitud enviada correctamente.');">
+
+                <div class="form-group">
+                    <label for="company">Empresa / Organización</label>
+                    <input type="text"
+                           id="company"
+                           required
+                           placeholder="Ej. Desarrollos S.A.">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Corporativo</label>
+                    <input type="email"
+                           id="email"
+                           required
+                           placeholder="contacto@tuempresa.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="msg">
+                        Alcance preliminar de la obra o servicio
+                    </label>
+
+                    <textarea
+                        id="msg"
+                        rows="5"
+                        placeholder="Describa brevemente los requerimientos, dimensiones aproximadas o plazos estimados...">
+                    </textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    Enviar Consulta
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sólida Estructuras. Enfoque e identidad digital empresarial.</p>
+        </div>
+    </footer>
+
+
+    <!-- BOTONES FLOTANTES DE CONTACTO -->
+    <div class="floating-buttons">
+        <!-- Botón de Teléfono -->
+        <a href="tel:+59899000000" class="float-btn phone">
+            📞
+            <span class="tooltip-text">Llamar a un Asesor</span>
+        </a>
+        <!-- Botón de WhatsApp -->
+        <a href="https://wa.me/59899000000?text=Hola,%20solicito%20información%20sobre%20los%20servicios%20de%20construcción" target="_blank" class="float-btn whatsapp">
+            💬
+            <span class="tooltip-text">Chat por WhatsApp</span>
+        </a>
+    </div>
+
+
+    <!-- JAVASCRIPT NATIVO PARA EL CARRUSEL DEL HERO -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const slideInterval = 5000; // Cambiará de imagen automáticamente cada 5 segundos
+
+        function showSlide(index) {
+            // Asegurar los límites del índice
+            if (index >= slides.length) { currentSlide = 0; }
+            else if (index < 0) { currentSlide = slides.length - 1; }
+            else { currentSlide = index; }
+
+            // Remover clase active de todos y ponerla en el actual
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[currentSlide].classList.add('active');
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+            resetAutoplay();
+        }
+
+        // Sistema de cambio automático (Autoplay)
+        let autoFlip = setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, slideInterval);
+
+        function resetAutoplay() {
+            clearInterval(autoFlip);
+            autoFlip = setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, slideInterval);
+        }
+    </script>
+
+</body>
+</html>

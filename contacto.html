@@ -50,6 +50,7 @@
         <a href="nuestroTrabajo.html">Proyectos</a>
 
         <a href="servicios.html">Servicios</a>
+		<a href="demos.html">Modelos Web</a>
 		
 		<a href="analizador.html">SG Analyzer</a>
 		 <a href="nosotros.html">Sobre Nosotros</a>
@@ -64,11 +65,12 @@
 
 </header>
 
-<script>
-function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
-}
-</script>
+    <!-- MENU MOBILE -->
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", () => {
+            document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
 
 <!-- CONTACTO -->
 <main class="services" id="contacto">

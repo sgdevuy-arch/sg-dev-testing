@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora Demo | Innovación y Solidez</title>
+	 <link rel="stylesheet" href="nuevo1.css">
+
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="logo-container">
+                    <div class="logo">Sólida<span>Estructuras</span></div>
+                </div>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                         <li><a href="demo_constructora.html">Inicio</a></li>
+                        <li><a href="Servicios_constructora.html">Servicios</a></li>
+                        <li><a href="nosotros_constructora.html">Nosotros</a></li>
+                        <li><a href="Contacto_constructora.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">Nuestros Servicios</span>
+            <h2>Soluciones Integrales en Construcción</h2>
+            <p>
+                Desarrollamos proyectos de construcción con altos estándares de calidad,
+                seguridad y cumplimiento de plazos.
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-icon">🏗️</div>
+                <h3>Obras Civiles</h3>
+                <p>
+                    Ejecución de proyectos de infraestructura y construcción para empresas e instituciones.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Construcción Comercial</h3>
+                <p>
+                    Desarrollo de locales comerciales, oficinas y espacios corporativos.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Viviendas Residenciales</h3>
+                <p>
+                    Construcción de hogares modernos adaptados a las necesidades de cada familia.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔨</div>
+                <h3>Reformas y Ampliaciones</h3>
+                <p>
+                    Modernización, remodelación y ampliación de espacios existentes.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📐</div>
+                <h3>Diseño y Planificación</h3>
+                <p>
+                    Desarrollo de proyectos, planos y asesoramiento técnico especializado.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🛡️</div>
+                <h3>Supervisión de Obras</h3>
+                <p>
+                    Control de calidad, seguimiento de avances y cumplimiento de normativas.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sólida Estructuras. Enfoque e identidad digital empresarial.</p>
+        </div>
+    </footer>
+
+
+    <!-- BOTONES FLOTANTES DE CONTACTO -->
+    <div class="floating-buttons">
+        <!-- Botón de Teléfono -->
+        <a href="tel:+59899000000" class="float-btn phone">
+            📞
+            <span class="tooltip-text">Llamar a un Asesor</span>
+        </a>
+        <!-- Botón de WhatsApp -->
+        <a href="https://wa.me/59899000000?text=Hola,%20solicito%20información%20sobre%20los%20servicios%20de%20construcción" target="_blank" class="float-btn whatsapp">
+            💬
+            <span class="tooltip-text">Chat por WhatsApp</span>
+        </a>
+    </div>
+
+
+    <!-- JAVASCRIPT NATIVO PARA EL CARRUSEL DEL HERO -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const slideInterval = 5000; // Cambiará de imagen automáticamente cada 5 segundos
+
+        function showSlide(index) {
+            // Asegurar los límites del índice
+            if (index >= slides.length) { currentSlide = 0; }
+            else if (index < 0) { currentSlide = slides.length - 1; }
+            else { currentSlide = index; }
+
+            // Remover clase active de todos y ponerla en el actual
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[currentSlide].classList.add('active');
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+            resetAutoplay();
+        }
+
+        // Sistema de cambio automático (Autoplay)
+        let autoFlip = setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, slideInterval);
+
+        function resetAutoplay() {
+            clearInterval(autoFlip);
+            autoFlip = setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, slideInterval);
+        }
+    </script>
+
+</body>
+</html>

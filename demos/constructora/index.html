@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora Demo | Innovación y Solidez</title>
+	 <link rel="stylesheet" href="nuevo1.css">
+
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="logo-container">
+                    <div class="logo">Sólida<span>Estructuras</span></div>
+                </div>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#hero-carousel">Inicio</a></li>
+                        
+                        <li><a href="Servicios_constructora.html">Servicios</a></li>
+                        <li><a href="nosotros_constructora.html">Nosotros</a></li>
+                        <li><a href="Contacto_constructora.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section con Carrusel de Fondo Animado -->
+    <section id="hero-carousel">
+        <!-- Flechas de control manual del carrusel -->
+        <button class="carousel-control prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="carousel-control next" onclick="changeSlide(1)">&#10095;</button>
+
+        <div class="carousel-inner">
+            <!-- Nota: Solo debes reemplazar las URLs de ejemplo por tus fotos de construcción reales en "background-image" -->
+            <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200');">
+                <div class="carousel-overlay"></div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200');">
+                <div class="carousel-overlay"></div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1590069261209-f8e9b8642343?q=80&w=1200');">
+                <div class="carousel-overlay"></div>
+            </div>
+        </div>
+
+        <!-- Contenido Central Firme e Impactante -->
+        <div class="container">
+            <div class="hero-content">
+                <h1>Construimos Infraestructura con <span>Garantía de Futuro</span></h1>
+                <p>Ingeniería de vanguardia, gestión rigurosa y un equipo técnico de excelencia para materializar tus proyectos de gran escala.</p>
+                <a href="#contact" class="btn">Cotizar Proyecto</a>
+                <a href="#services" class="btn btn-outline">Nuestras Soluciones</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios (Enfoque Construcción) -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Especialidades</h2>
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <div class="service-card-icon">🏗️</div>
+                    <h3>Obras Civiles</h3>
+                    <p>Construcción integral de plantas industriales, complejos corporativos y comerciales bajo los más estrictos estándares de seguridad y calidad.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-icon">📐</div>
+                    <h3>Ingeniería y Diseño</h3>
+                    <p>Planificación técnica detallada, modelado estructural avanzado y optimización de recursos para asegurar viabilidad absoluta.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-icon">🛠️</div>
+                    <h3>Gerencia de Proyectos</h3>
+                    <p>Supervisión en obra en tiempo real, control riguroso de cronogramas y auditoría de materiales para entregas exactas sin desvíos.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros & Datos de Impacto -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Trayectoria y Solidez</h2>
+            <div class="about-content">
+                <p>Somos una empresa constructora consolidada, dedicada a ofrecer soluciones de infraestructura moderna. Fusionamos técnicas constructivas tradicionales de alta resistencia con metodologías de gestión ágiles y digitales, garantizando un control total de la obra y transparencia absoluta para nuestros inversores.</p>
+                
+                <!-- Datos numéricos que transmiten seriedad al cliente -->
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <div class="stat-number">+150</div>
+                        <div class="stat-label">Obras Entregadas</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Plazos Cumplidos</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">+40</div>
+                        <div class="stat-label">Profesionales Técnicos</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">A+</div>
+                        <div class="stat-label">Calificación de Seguridad</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Empresarial -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Iniciar una Consulta Técnica</h2>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Simulación: Solicitud de cotización enviada correctamente.');">
+                <div class="form-group">
+                    <label for="company">Empresa / Organización</label>
+                    <input type="text" id="company" required placeholder="Ej. Desarrollos S.A.">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Corporativo</label>
+                    <input type="email" id="email" required placeholder="contacto@tuempresa.com">
+                </div>
+                <div class="form-group">
+                    <label for="msg">Alcance preliminar de la obra o servicio</label>
+                    <textarea id="msg" rows="4" placeholder="Describa brevemente los requerimientos, metros cuadrados aproximados o plazos estimados..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; cursor: pointer;">Enviar a Departamento Técnico</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sólida Estructuras. Enfoque e identidad digital empresarial.</p>
+        </div>
+    </footer>
+
+
+    <!-- BOTONES FLOTANTES DE CONTACTO -->
+    <div class="floating-buttons">
+        <!-- Botón de Teléfono -->
+        <a href="tel:+59899000000" class="float-btn phone">
+            📞
+            <span class="tooltip-text">Llamar a un Asesor</span>
+        </a>
+        <!-- Botón de WhatsApp -->
+        <a href="https://wa.me/59899000000?text=Hola,%20solicito%20información%20sobre%20los%20servicios%20de%20construcción" target="_blank" class="float-btn whatsapp">
+            💬
+            <span class="tooltip-text">Chat por WhatsApp</span>
+        </a>
+    </div>
+
+
+    <!-- JAVASCRIPT NATIVO PARA EL CARRUSEL DEL HERO -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const slideInterval = 5000; // Cambiará de imagen automáticamente cada 5 segundos
+
+        function showSlide(index) {
+            // Asegurar los límites del índice
+            if (index >= slides.length) { currentSlide = 0; }
+            else if (index < 0) { currentSlide = slides.length - 1; }
+            else { currentSlide = index; }
+
+            // Remover clase active de todos y ponerla en el actual
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[currentSlide].classList.add('active');
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+            resetAutoplay();
+        }
+
+        // Sistema de cambio automático (Autoplay)
+        let autoFlip = setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, slideInterval);
+
+        function resetAutoplay() {
+            clearInterval(autoFlip);
+            autoFlip = setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, slideInterval);
+        }
+    </script>
+
+</body>
+</html>

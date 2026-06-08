@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora Demo | Innovación y Solidez</title>
+	 <link rel="stylesheet" href="nuevo1.css">
+
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="logo-container">
+                    <div class="logo">Sólida<span>Estructuras</span></div>
+                </div>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                         <li><a href="demo_constructora.html">Inicio</a></li>
+                        <li><a href="Servicios_constructora.html">Servicios</a></li>
+                        <li><a href="nosotros_constructora.html">Nosotros</a></li>
+                        <li><a href="Contacto_constructora.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <section class="about">
+    <div class="container">
+        
+        <span class="section-tag">Sobre Nosotros</span>
+
+        <h2>Construimos proyectos que perduran en el tiempo</h2>
+
+        <p>
+            En <strong>Constructora Horizonte</strong> nos especializamos en el diseño, planificación y ejecución de obras civiles, comerciales y residenciales. Trabajamos con un equipo de profesionales comprometidos con la calidad, la seguridad y el cumplimiento de cada proyecto.
+        </p>
+
+        <p>
+            Con años de experiencia en el sector de la construcción, hemos desarrollado soluciones eficientes para empresas, instituciones y particulares, adaptándonos a las necesidades específicas de cada cliente.
+        </p>
+
+        <p>
+            Nuestro objetivo es transformar ideas en espacios funcionales, modernos y duraderos, utilizando materiales de calidad y aplicando las mejores prácticas de la industria.
+        </p>
+
+        <div class="about-features">
+            <div class="feature">
+                ✔ Más de 15 años de experiencia
+            </div>
+
+            <div class="feature">
+                ✔ Equipo técnico especializado
+            </div>
+
+            <div class="feature">
+                ✔ Obras residenciales y comerciales
+            </div>
+
+            <div class="feature">
+                ✔ Compromiso con la calidad y la seguridad
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sólida Estructuras. Enfoque e identidad digital empresarial.</p>
+        </div>
+    </footer>
+
+
+    <!-- BOTONES FLOTANTES DE CONTACTO -->
+    <div class="floating-buttons">
+        <!-- Botón de Teléfono -->
+        <a href="tel:+59899000000" class="float-btn phone">
+            📞
+            <span class="tooltip-text">Llamar a un Asesor</span>
+        </a>
+        <!-- Botón de WhatsApp -->
+        <a href="https://wa.me/59899000000?text=Hola,%20solicito%20información%20sobre%20los%20servicios%20de%20construcción" target="_blank" class="float-btn whatsapp">
+            💬
+            <span class="tooltip-text">Chat por WhatsApp</span>
+        </a>
+    </div>
+
+
+    <!-- JAVASCRIPT NATIVO PARA EL CARRUSEL DEL HERO -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const slideInterval = 5000; // Cambiará de imagen automáticamente cada 5 segundos
+
+        function showSlide(index) {
+            // Asegurar los límites del índice
+            if (index >= slides.length) { currentSlide = 0; }
+            else if (index < 0) { currentSlide = slides.length - 1; }
+            else { currentSlide = index; }
+
+            // Remover clase active de todos y ponerla en el actual
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[currentSlide].classList.add('active');
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+            resetAutoplay();
+        }
+
+        // Sistema de cambio automático (Autoplay)
+        let autoFlip = setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, slideInterval);
+
+        function resetAutoplay() {
+            clearInterval(autoFlip);
+            autoFlip = setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, slideInterval);
+        }
+    </script>
+
+</body>
+</html>
