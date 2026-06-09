@@ -104,7 +104,25 @@ function toggleMenu() {
     </div>
 
 </section>
+<section class="mision-vision">
 
+    <div class="objetivo">
+        <h2>Nuestro Objetivo</h2>
+        <p>
+            Ayudar a empresas y emprendedores a crecer mediante soluciones digitales
+            modernas, eficientes y accesibles.
+        </p>
+    </div>
+
+    <div class="vision">
+        <h2>Nuestra Visión</h2>
+        <p>
+            Crecer junto a nuestros clientes, aportando soluciones tecnológicas
+            que les permitan mejorar su productividad y fortalecer su presencia digital.
+        </p>
+    </div>
+
+</section>
     <!-- EQUIPO (SEPARADO Y CENTRADO) -->
     <section class="team-section">
 
@@ -157,5 +175,11 @@ function toggleMenu() {
         <i class="fab fa-instagram"></i>
     </a>
 </div>
+    <!-- MENU MOBILE -->
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", () => {
+            document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
 </body>
 </html>

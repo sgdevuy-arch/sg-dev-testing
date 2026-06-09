@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>
+        SG Dev Rocha | Desarrollo Web, Testing QA y Soluciones Empresariales en Uruguay
+    </title>
+
+    <meta name="description"
+          content="Empresa uruguaya ubicada en Rocha. Desarrollamos sitios web profesionales, realizamos testing y QA de software, y creamos soluciones digitales para empresas y comercios de todo Uruguay.">
+
+    <meta name="keywords"
+          content="desarrollo web uruguay, desarrollo web rocha, sitios web uruguay, testing qa uruguay, empresa tecnológica uruguay, automatización de procesos, soluciones empresariales, desarrollo de software uruguay, páginas web rocha, diseño web uruguay">
+
+    <meta name="author" content="SG Dev">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="language" content="es">
+
+    <!-- SEO LOCAL -->
+    <meta name="geo.region" content="UY-RO">
+    <meta name="geo.placename" content="Rocha">
+    <meta name="geo.country" content="Uruguay">
+
+    <!-- CANONICAL -->
+    <link rel="canonical"
+          href="https://sgdevuy-arch.github.io/sg-dev-testing/">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title"
+          content="SG Dev Rocha | Desarrollo Web Profesional en Uruguay">
+
+    <meta property="og:description"
+          content="Empresa uruguaya especializada en desarrollo web, testing QA y soluciones tecnológicas para empresas y emprendedores.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:locale" content="es_UY">
+
+    <meta property="og:url"
+          content="https://sgdevuy-arch.github.io/sg-dev-testing/">
+
+    <meta property="og:image"
+          content="https://sgdevuy-arch.github.io/sg-dev-testing/logo2.png">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="SG Dev Rocha | Desarrollo Web y Testing QA">
+
+    <meta name="twitter:description"
+          content="Desarrollo web profesional, testing QA y soluciones empresariales para todo Uruguay.">
+
+    <meta name="twitter:image"
+          content="https://sgdevuy-arch.github.io/sg-dev-testing/logo2.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="nuevo1.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #1e293b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+.quiz-container{
+    background-color:var(--card-bg);
+    padding:40px 30px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    max-width:550px;
+    width:100%;
+
+    margin:50px auto;
+}
+
+
+        .quiz-container {
+            background-color: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            max-width: 550px;
+            width: 100%;
+			
+        }
+
+        .progress-bar {
+            height: 6px;
+            background-color: #e2e8f0;
+            border-radius: 3px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: var(--primary-color);
+            width: 20%;
+            transition: width 0.4s ease;
+        }
+
+        .step {
+            display: none;
+        }
+
+        .step.active {
+            display: block;
+            animation: slideUp 0.4s ease;
+        }
+
+        h2 {
+		color:black;
+            font-size: 1.4rem;
+            line-height: 1.4;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option-btn {
+            background-color: #fff;
+            border: 2px solid #e2e8f0;
+            padding: 16px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 1rem;
+            line-height: 1.4;
+            transition: all 0.2s ease;
+            color: var(--text-color);
+        }
+
+        .option-btn:hover {
+            border-color: var(--primary-color);
+            background-color: #eff6ff;
+        }
+
+        .result-box {
+            text-align: center;
+        }
+
+        .result-title {
+            color: #16a34a;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .recommendation-text {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #475569;
+            text-align: left;
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .price-tag {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            color: #16a34a;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .price-tag strong {
+            font-size: 1.5rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 25px;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.02);
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+<body>
+
+    <!-- NAVBAR -->
+<header class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+        SG <span>Dev & Testing</span>
+    </div>
+
+    <!-- BOTÓN MOBILE -->
+    <button class="menu-toggle" id="menu-toggle">
+        ☰
+    </button>
+
+    <!-- LINKS -->
+    <nav class="nav-links" id="nav-links">
+
+        <a href="index.html">Inicio</a>
+
+        <a href="nuestroTrabajo.html">Proyectos</a>
+
+        <a href="servicios.html">Servicios</a>
+		<a href="demos.html">Modelos Web</a>
+		
+		<a href="analizador.html">SG Analyzer</a>
+		 <a href="nosotros.html">Sobre Nosotros</a>
+
+        <a href="contacto.html">Contacto</a>
+		
+	
+
+       
+
+    </nav>
+
+</header>
+ </br>
+  </br>
+<div class="quiz-container">
+    <!-- Barra de progreso -->
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+    </div>
+
+    <div id="quiz-steps">
+        <!-- Pregunta 1: Qué ofrece -->
+        <div class="step active" data-step="1">
+            <h2>1. ¿Qué es lo que principalmente ofrece tu negocio?</h2>
+            <div class="options-list">
+                <button class="option-btn" onclick="nextStep(1, {ofrece: 'productos'})">Productos físicos (ropa, comida, objetos, stock de cosas).</button>
+                <button class="option-btn" onclick="nextStep(1, {ofrece: 'servicios'})">Servicios, turnos o conocimiento (salud, estética, asesoría, reparaciones, cursos).</button>
+                <button class="option-btn" onclick="nextStep(1, {ofrece: 'trabajos'})">Trabajos realizados que quiero mostrar (fotos de obras, diseños, eventos, portfolio).</button>
+            </div>
+        </div>
+
+        <!-- Pregunta 2: El objetivo principal -->
+        <div class="step" data-step="2">
+            <h2>2. Si tuvieras tu página web hoy, ¿cuál sería su misión principal?</h2>
+            <div class="options-list">
+                <button class="option-btn" onclick="nextStep(2, {mision: 'un_solo_producto'})">Promocionar con fuerza un único producto nuevo, un lanzamiento o un servicio específico.</button>
+                <button class="option-btn" onclick="nextStep(2, {mision: 'imagen_empresa'})">Dar una imagen formal, seria y profesional de toda mi empresa o negocio.</button>
+                <button class="option-btn" onclick="nextStep(2, {mision: 'mostrar_todo'})">Mostrar todo lo que tengo disponible para que la gente elija sin tener que preguntarme precios.</button>
+            </div>
+        </div>
+
+        <!-- Pregunta 3: Cómo te contactan -->
+        <div class="step" data-step="3">
+            <h2>3. ¿Cómo te gustaría que los clientes finalicen el contacto en la web?</h2>
+            <div class="options-list">
+                <button class="option-btn" onclick="nextStep(3, {contacto: 'mensaje'})">Que miren la info y me manden un mensaje directo para consultar o contratar.</button>
+                <button class="option-btn" onclick="nextStep(3, {contacto: 'carrito_whatsapp'})">Que elijan varios productos de una lista y me llegue el pedido armado detallado a mi WhatsApp o correo.</button>
+                <button class="option-btn" onclick="nextStep(3, {contacto: 'reserva'})">Que vean mis días y horarios disponibles y dejen su turno reservado de forma automática.</button>
+            </div>
+        </div>
+
+        <!-- Resultado Final -->
+        <div class="step" id="result-step">
+            <div class="result-box">
+                <div class="result-title">✨ ¡Análisis Completado!</div>
+                <h2>Esta es la solución ideal para tu caso:</h2>
+                
+                <div class="recommendation-text" id="result-text"></div>
+                
+                <div class="price-tag" id="result-price"></div>
+                
+                <p style="margin-top: 25px; font-size: 0.95rem; color: #64748b; line-height: 1.4;">
+                    * Recordá que este es un <strong>precio base estimado</strong>. Cada negocio es único y el valor definitivo puede variar según las funciones exactas que necesites.
+                </p>
+                <a href="#" id="whatsapp-btn" class="cta-btn" target="_blank">📲 Hablar con un asesor ahora</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let respuestas = {};
+    const totalPasos = 3; // Reducido a 3 para hacerlo súper rápido y efectivo
+
+    function nextStep(pasoActual, datos) {
+        respuestas = { ...respuestas, ...datos };
+
+        document.querySelector(`[data-step="${pasoActual}"]`).classList.remove('active');
+
+        const porcentaje = (pasoActual / totalPasos) * 100;
+        document.getElementById('progress').style.width = `${porcentaje}%`;
+
+        if (pasoActual < totalPasos) {
+            document.querySelector(`[data-step="${pasoActual + 1}"]`).classList.add('active');
+        } else {
+            analizarCaso();
+        }
+    }
+
+    function analizarCaso() {
+        document.getElementById('result-step').classList.add('active');
+        const contenedorTexto = document.getElementById('result-text');
+        const contenedorPrecio = document.getElementById('result-price');
+        const btnWhatsapp = document.getElementById('whatsapp-btn');
+        
+        let diagnostico = "";
+        let tipoWebParaMensaje = "";
+        let precioBase = "";
+
+        // --- LÓGICA EN BASE A TUS 5 SERVICIOS ---
+
+        // 1. LANDING PAGE (Para un solo producto / Campaña específica)
+        if (respuestas.mision === 'un_solo_producto') {
+            tipoWebParaMensaje = "Landing Page (Página de Aterrizaje)";
+            precioBase = "$120"; // <-- Cambiá el precio acá
+            diagnostico = `Tu negocio necesita una <strong>Página de Lanzamiento Directo (Landing Page)</strong>.<br><br>
+            Es un sitio web de una sola sección, diseñado exclusivamente para captar la atención de punta a punta. Ideal para cuando querés promocionar un servicio clave o un producto estrella. Va directo al grano, explica los beneficios y cierra con un botón directo a tu WhatsApp para asegurar la venta.`;
+        }
+        
+        // 2. PORTAFOLIO ONLINE
+        else if (respuestas.ofrece === 'trabajos') {
+            tipoWebParaMensaje = "Portafolio Online";
+            precioBase = "$150"; // <-- Cambiá el precio acá
+            diagnostico = `Para tu perfil, lo ideal es un <strong>Portafolio Digital Profesional</strong>.<br><br>
+            Una página enfocada 100% en lo visual. Su objetivo es convertirse en tu galería personal para demostrar la calidad de tus trabajos (obras, proyectos, diseños o fotografías). Excelente para generar confianza ciega en tus futuros clientes mostrando lo que sabés hacer.`;
+        }
+
+        // 3. CATÁLOGO CON PEDIDO A WHATSAPP / CORREO
+        else if (respuestas.ofrece === 'productos' || respuestas.contacto === 'carrito_whatsapp' || respuestas.mision === 'mostrar_todo') {
+            tipoWebParaMensaje = "Catálogo Digital con Pedido a WhatsApp/Correo";
+            precioBase = "$220"; // <-- Cambiá el precio acá
+            diagnostico = `La solución perfecta para vos es un <strong>Catálogo Virtual Interactivo</strong>.<br><br>
+            Le permite a tus clientes recorrer todo tu stock con fotos y precios de forma ordenada. Pueden ir sumando cosas a un "carrito" y, al momento de cerrar, la web te envía a vos un mensaje ordenado por WhatsApp o por correo electrónico con la lista exacta de lo que quieren comprar para que vos solo coordines el pago y envío de forma humana.`;
+        }
+
+        // 4. SISTEMA DE RESERVAS
+        else if (respuestas.contacto === 'reserva') {
+            tipoWebParaMensaje = "Página Web con Sistema de Reservas";
+            precioBase = "$250"; // <-- Cambiá el precio acá
+            diagnostico = `Tu negocio necesita una <strong>Web con Agenda y Reserva Automática</strong>.<br><br>
+            Ideal para profesionales que ofrecen servicios por hora o turnos. Tus clientes entran a la web, miran tu calendario en tiempo real, eligen el día/horario que les quede cómodo y completan la reserva. El sistema te avisa de forma automática para que no pierdas tiempo coordinando agendas manualmente.`;
+        }
+
+        // 5. PÁGINA EMPRESARIAL (Por defecto si busca imagen corporativa / institucional)
+        else {
+            tipoWebParaMensaje = "Página Web Empresarial / Institucional";
+            precioBase = "$180"; // <-- Cambiá el precio acá
+            diagnostico = `Tu negocio califica para una <strong>Página Web Empresarial Completa</strong>.<br><br>
+            Un sitio formal, con diferentes secciones (Inicio, Quiénes Somos, Servicios, Contacto). Está pensada para empresas o comercios establecidos que quieren consolidar su marca en internet, brindar información detallada de todos sus servicios y dar una imagen de máxima seriedad en el mercado.`;
+        }
+
+        // Mostrar textos y precios
+        contenedorTexto.innerHTML = diagnostico;
+        contenedorPrecio.innerHTML = `Precio estimado de referencia: desde <strong>${precioBase} USD</strong>`;
+
+        // Configurar WhatsApp
+        const tuNumeroTelefono = "5491100000000"; // <-- CAMBIA ESTO POR TU WHATSAPP REAL (con código de país)
+        const mensajeTexto = `¡Hola! Hice el test en su web y mi diagnóstico dio: "${tipoWebParaMensaje}". Me interesa conocer el presupuesto detallado a partir del precio base.`;
+        
+        btnWhatsapp.href = `https://wa.me/${tuNumeroTelefono}?text=${encodeURIComponent(mensajeTexto)}`;
+    }
+</script>
+</section>
+</section>
+    <!-- CONTACTO -->
+    <section class="services" id="contacto">
+
+        <h2>Contacto</h2>
+
+        <p>📧 Email: sgdev.uy@gmail.com</p>
+
+        <p>📱 WhatsApp: +598 91 041 567 | +598 99 318 088</p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 SG Dev & Testing - Todos los derechos reservados
+    </footer>
+
+        <!-- MENU MOBILE -->
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", () => {
+            document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
+<div class="social-sidebar">
+
+    <a href="https://wa.me/59891041567"
+       target="_blank"
+       class="social-btn whatsapp">
+
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=61590281644163"
+       target="_blank"
+       class="social-btn facebook">
+
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://instagram.com/sgdev.uy/"
+       target="_blank"
+       class="social-btn instagram">
+
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+</body>
+
+</html>
