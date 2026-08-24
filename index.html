@@ -1,271 +1,516 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SG Dev & Testing: soluciones integrales para empresas y emprendimientos. Desarrollo web, identidad visual, automatización, impresión 3D, ropa de trabajo y más.">
+  <meta name="keywords" content="desarrollo web Uruguay, identidad visual, impresión 3D, ropa de trabajo, automatización, testing QA, SG Dev Testing, soluciones empresariales">
+  <meta name="author" content="SG Dev & Testing">
+  <meta name="theme-color" content="#06152d">
+  <title>SG Dev & Testing | Soluciones integrales para empresas</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Open Graph -->
+  <meta property="og:title" content="SG Dev & Testing | Soluciones integrales">
+  <meta property="og:description" content="Del mundo digital al mundo físico. Pensamos. Diseñamos. Creamos. Solucionamos.">
+  <meta property="og:type" content="website">
 
-    <!-- SEO -->
-    <title>Páginas Web para Negocios en Uruguay | SG Dev & Testing</title>
-
-    <meta name="description"
-          content="Empresa uruguaya ubicada en Rocha. Desarrollamos sitios web profesionales, realizamos testing y QA de software, y creamos soluciones digitales para empresas y comercios de todo Uruguay.">
-
-    <meta name="keywords"
-          content="desarrollo web uruguay, desarrollo web rocha, sitios web uruguay, testing qa uruguay, empresa tecnológica uruguay, automatización de procesos, soluciones empresariales, desarrollo de software uruguay, páginas web rocha, diseño web uruguay">
-
-    <meta name="author" content="SG Dev">
-
-    <meta name="robots" content="index, follow">
-
-    <meta name="language" content="es">
-
-    <!-- SEO LOCAL -->
-    <meta name="geo.region" content="UY-RO">
-    <meta name="geo.placename" content="Rocha">
-    <meta name="geo.country" content="Uruguay">
-
-    <!-- CANONICAL -->
-    <link rel="canonical"
-          href="https://sgdevuy-arch.github.io/sg-dev-testing/">
-
-    <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
-
-    <!-- OPEN GRAPH -->
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "SG Dev & Testing",
-  "url": "https://sgdevuy-arch.github.io/sg-dev-testing/",
-  "description": "Desarrollo web, testing QA y automatización de tareas para empresas y emprendedores en Uruguay.",
-  "email": "sgdev.uy@gmail.com",
-  "areaServed": "Uruguay",
-  "serviceType": [
-    "Desarrollo Web",
-    "Testing QA",
-    "Automatización de Tareas"
-  ]
-}
-</script>
-
-    <!-- TWITTER -->
-    <meta name="twitter:card" content="summary_large_image">
-
-    <meta name="twitter:title"
-          content="SG Dev Rocha | Desarrollo Web y Testing QA">
-
-    <meta name="twitter:description"
-          content="Desarrollo web profesional, testing QA y soluciones empresariales para todo Uruguay.">
-
-    <meta name="twitter:image"
-          content="https://sgdevuy-arch.github.io/sg-dev-testing/logo2.png">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="nuevo1.css">
-
-    <!-- ICONOS -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+  <link rel="stylesheet" href="style.css">
+ 
 </head>
-
+  <!-- JAVASCRIPT DEL MENÚ -->
+  
 <body>
 
-    <!-- NAVBAR -->
-<header class="navbar">
+<!-- ================= NAVBAR ================= -->
+<header class="site-header">
+  <nav class="navbar container">
 
-    <!-- LOGO -->
-    <div class="logo">
-        SG <span>Dev & Testing</span>
-    </div>
+    <!-- MARCA -->
+    <a class="brand" href="index.html" aria-label="SG Dev & Testing - Inicio">
+      <span class="brand-mark">SG</span>
+
+      <span class="brand-text">
+        <strong>SG</strong>
+        <small>DEV & TESTING</small>
+      </span>
+    </a>
+
 
     <!-- BOTÓN MOBILE -->
-    <button class="menu-toggle" id="menu-toggle">
-        ☰
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
-    <!-- LINKS -->
-    <nav class="nav-links" id="nav-links">
 
-        <a href="index.html">Inicio</a>
+    <!-- MENÚ -->
+    <div class="nav-menu" id="navMenu">
 
-        <a href="nuestroTrabajo.html">Proyectos</a>
+      <!-- INICIO -->
+      <a class="active" href="index.html">
+        Inicio
+      </a>
 
-        <a href="servicios.html">Servicios</a>
-		<a href="demos.html">Modelos Web</a>
-		
-		<a href="analizador.html">SG Analyzer</a>
-		 <a href="nosotros.html">Sobre Nosotros</a>
 
-        <a href="contacto.html">Contacto</a>
-		
-	
+      <!-- ================= SOLUCIONES ================= -->
+<div class="nav-dropdown">
 
-       
+  <button
+    class="nav-dropdown-btn"
+    type="button"
+    aria-expanded="false"
+  >
+    Soluciones
+    <span class="dropdown-arrow">⌄</span>
+  </button>
 
-    </nav>
+  <div class="solutions-menu">
 
-</header>
+    <div class="solutions-column">
+      <h3>💻 Digital</h3>
 
-    <!-- HERO -->
-    <section class="hero">
+      <a href="desarrollo-web.html">Desarrollo Web</a>
+      
+      <a href="demos.html">Modelos Web</a>
+      <a href="analizador.html">SG Analyzer</a>
+    </div>
 
-        <!-- LOGO -->
-        <img src="logoSG.png" alt="Logo oficial de SG Dev y SG Analyzer">
+    <div class="solutions-column">
+      <h3>🎨 Identidad</h3>
 
-        <!-- TITULO SEO -->
-<h1>
-Tu aliado tecnológico para crecer
-</h1>
+      <a href="logos.html">Diseño de Logos</a>
+     
+    </div>
 
-Creamos sitios web modernos para empresas, comercios y emprendedores. También ofrecemos testing profesional y soluciones tecnológicas para optimizar procesos empresariales.
+    <div class="solutions-column">
+      <h3>👕 Fabricación</h3>
 
-        <!-- BOTONES -->
-        <div class="hero-buttons">
+      <a href="uniformes.html">Uniformes</a>
+      <a href="ropa-trabajo.html">Ropa de Trabajo</a>
+      <a href="personalizacion.html">Personalización</a>
+    </div>
 
-            <a href="contacto.html" class="btn">
-                Solicitar presupuesto
-            </a>
+  </div>
 
-            <a href="nuestroTrabajo.html" class="btn">
-                Ver proyectos
-            </a>
+</div>
 
-        </div>
 
-    </section>
-	<!-- ASISTENTE WEB -->
-<section class="web-assistant">
+      <!-- PROYECTOS -->
+      <a href="nuestroTrabajo.html">
+        Proyectos
+      </a>
+      <!-- Servicios -->
+      <a href="servicios.html">
+        Servicios
+      </a>
 
-    <div class="assistant-content">
 
-        <div class="assistant-icon">
-            💡
-        </div>
+      <!-- SOBRE SG -->
+      <a href="nosotros.html">
+        Sobre SG
+      </a>
 
-        <h2>
-            ¿No sabés qué tipo de página web es la mejor para tu negocio?
-        </h2>
 
-        <p>
-            Respondé 3 preguntas en menos de un minuto y descubrí qué tipo de sitio web se adapta mejor a tus necesidades.
-        </p>
-
-        <a href="encuesta.html" class="assistant-btn">
-            Descubrir mi sitio ideal
-        </a>
+      <!-- CONTACTO -->
+      <a class="nav-cta" href="contacto.html">
+        Contactanos
+      </a>
 
     </div>
 
-</section>
+  </nav>
+</header>
+  <main>
 
-    <!-- SERVICIOS -->
-    <section class="services">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
 
-        <h2>Nuestros Servicios</h2>
+      <div class="container hero-grid">
+        <div class="hero-content">
+         
 
-        <div class="cards">
+          <h1>
+            Del mundo <span class="cyan">digital</span>
+            al mundo <span class="yellow">físico.</span>
+          </h1>
 
-            <div class="card">
+          <p class="hero-lead">
+            Soluciones integrales para empresas, comercios y emprendimientos.
+            <strong>Pensamos. Diseñamos. Creamos. Solucionamos.</strong>
+          </p>
 
-                <h3>💻 Desarrollo Web</h3>
+          <p class="hero-copy">
+            Desde tu página web y automatización de procesos hasta tu identidad,
+            ropa de trabajo, productos personalizados e impresión 3D.
+          </p>
 
-                <p>
-                    Creamos páginas web corporativas, catálogos online y landing pages diseñadas para generar confianza y atraer clientes.
-                </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#soluciones">Conocé nuestras soluciones</a>
+            <a class="btn btn-outline" href="contacto.html">Solicitar presupuesto</a>
+          </div>
 
-            </div>
-
-            <div class="card">
-
-                <h3>🧪 Testing de Software</h3>
-
-                <p>
-                    Detectamos errores y problemas de rendimiento antes de que afecten a tus usuarios.
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <h3>⚡ Automatización</h3>
-
-                <p>
-                   Desarrollamos herramientas personalizadas para automatizar tareas y optimizar procesos internos.
-                </p>
-
-            </div>
-
+          <div class="hero-trust">
+            <span>✓ Un solo proveedor</span>
+            <span>✓ Soluciones personalizadas</span>
+            <span>✓ Atención directa</span>
+          </div>
         </div>
 
-    </section>
-<section class="why-us">
+        <div class="hero-visual">
+         
 
-    
+          <div class="visual-orbit orbit-1"></div>
+          <div class="visual-orbit orbit-2"></div>
 
-    <h2>¿Qué obtienen nuestros clientes?</h2>
+          <div class="visual-core">
+                    <!-- LOGO -->
+        <img src="logoSG.png" alt="Logo oficial de SG Dev y SG Analyzer">
 
-<ul class="benefits-list">
-    <li>✅ Sitios web profesionales que generan confianza.</li>
-    <li>✅ Mayor presencia digital para su empresa.</li>
-    <li>✅ Soluciones adaptadas a sus necesidades.</li>
-    <li>✅ Testing y control de calidad profesional.</li>
-    <li>✅ Comunicación directa y atención personalizada.</li>
-    <li>✅ Soporte continuo y acompañamiento.</li>
-</ul>
+          </div>
 
-</section>
-</section>
-    <!-- CONTACTO -->
-    <section class="services" id="contacto">
-
-        <h2>Contacto</h2>
-
-        <p>📧 Email: sgdev.uy@gmail.com</p>
-
-        <p>📱 WhatsApp: +598 91 041 567 | +598 99 318 088</p>
-
+          
+        </div>
+      </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        © 2026 SG Dev & Testing - Todos los derechos reservados
-    </footer>
+    <!-- ================= SOLUCIONES ================= -->
+    <section class="solutions section" id="soluciones">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">TODO EN UN SOLO LUGAR</span>
+          <h2>Soluciones para hacer crecer tu negocio</h2>
+          <p>
+            Cuatro áreas, una sola marca. Elegí lo que necesitás o combiná
+            soluciones para crear una propuesta a medida para tu empresa.
+          </p>
+        </div>
 
-    <!-- MENU MOBILE -->
-    <script>
-        document.getElementById("menu-toggle").addEventListener("click", () => {
-            document.getElementById("nav-links").classList.toggle("active");
-        });
-    </script>
-<div class="social-sidebar">
+        <div class="solution-grid">
 
-    <a href="https://wa.me/59891041567"
-       target="_blank"
-       class="social-btn whatsapp">
+          <!-- DIGITAL -->
+          <article class="solution-card digital">
+            <div class="card-top">
+              <div class="card-icon">💻</div>
+              <span class="card-number">01</span>
+            </div>
+            <span class="card-label">SG DIGITAL</span>
+            <h3>Tu negocio en el mundo digital</h3>
+            <p>
+              Creamos herramientas digitales que muestran tu empresa,
+              atraen clientes y ayudan a optimizar tu trabajo.
+            </p>
+            <ul>
+              <li>Desarrollo web</li>
+              <li>Catálogos digitales</li>
+              <li>Landing pages</li>
+              <li>Aplicaciones</li>
+              <li>Automatización</li>
+              <li>SEO y presencia digital</li>
+              <li>Testing & QA</li>
+              <li>Soluciones personalizadas</li>
+            </ul>
+            <a href="servicios.html" class="card-link">Conocer SG Digital →</a>
+          </article>
 
-        <i class="fab fa-whatsapp"></i>
-    </a>
+          <!-- IDENTIDAD -->
+          <article class="solution-card identity">
+            <div class="card-top">
+              <div class="card-icon">✒️</div>
+              <span class="card-number">02</span>
+            </div>
+            <span class="card-label">SG IDENTIDAD</span>
+            <h3>Hacemos visible tu marca</h3>
+            <p>
+              Diseñamos la imagen que tu negocio necesita para verse
+              profesional y ser reconocido.
+            </p>
+            <ul>
+              <li>Diseño de logos</li>
+              <li>Tarjetas personales</li>
+              <li>Tarjetas comerciales</li>
+              <li>Folletos y flyers</li>
+              <li>Etiquetas y stickers</li>
+              <li>Vinilos</li>
+              <li>Cartelería</li>
+              <li>Papelería empresarial</li>
+            </ul>
+            <a href="contacto.html" class="card-link">Crear mi identidad →</a>
+          </article>
 
-    <a href="https://www.facebook.com/profile.php?id=61590281644163"
-       target="_blank"
-       class="social-btn facebook">
+          <!-- FABRICACIÓN -->
+          <article class="solution-card fabrication">
+            <div class="card-top">
+              <div class="card-icon">🖨️</div>
+              <span class="card-number">03</span>
+            </div>
+            <span class="card-label">SG FABRICACIÓN</span>
+            <h3>Fabricamos lo que necesitás</h3>
+            <p>
+              Convertimos ideas en objetos y soluciones físicas mediante
+              personalización e impresión 3D.
+            </p>
+            <ul>
+              <li>Piezas personalizadas</li>
+              <li>Soportes y organizadores</li>
+              <li>Identificadores</li>
+              <li>Llaveros empresariales</li>
+              <li>Productos promocionales</li>
+              <li>Prototipos</li>
+              <li>Piezas para emprendimientos</li>
+              <li>Soluciones específicas en 3D</li>
+            </ul>
+            <a href="contacto.html" class="card-link">Crear un producto →</a>
+          </article>
 
-        <i class="fab fa-facebook-f"></i>
-    </a>
+          <!-- UNIFORMES -->
+          <article class="solution-card uniforms">
+            <div class="card-top">
+              <div class="card-icon">👕</div>
+              <span class="card-number">04</span>
+            </div>
+            <span class="card-label">SG UNIFORMES</span>
+            <h3>Tu equipo, tu marca, tu identidad</h3>
+            <p>
+              Ropa de trabajo y prendas personalizadas para que tu equipo
+              represente a tu empresa.
+            </p>
+            <ul>
+              <li>Remeras personalizadas</li>
+              <li>Chombas</li>
+              <li>Buzos</li>
+              <li>Camperas</li>
+              <li>Ropa de trabajo</li>
+              <li>Uniformes empresariales</li>
+              <li>Vinilo textil / estampado</li>
+              <li>Bordado y asesoramiento</li>
+            </ul>
+            <a href="contacto.html" class="card-link">Vestir mi empresa →</a>
+          </article>
 
-    <a href="https://instagram.com/sgdev.uy/"
-       target="_blank"
-       class="social-btn instagram">
+        </div>
+      </div>
+    </section>
 
-        <i class="fab fa-instagram"></i>
-    </a>
-</div>
+    <!-- ================= PROPUESTA DE VALOR ================= -->
+    <section class="value-section">
+      <div class="container">
+        <div class="value-box">
+          <div class="value-heading">
+            <span class="section-kicker">¿POR QUÉ SG?</span>
+            <h2>Vos enfocáte en tu negocio.<br><span>Nosotros nos encargamos del resto.</span></h2>
+          </div>
+
+          <div class="value-items">
+            <div class="value-item">
+              <span>⏱</span>
+              <strong>Ahorrá tiempo</strong>
+              <p>Centralizá tus necesidades en un solo proveedor.</p>
+            </div>
+            <div class="value-item">
+              <span>💰</span>
+              <strong>Optimizá costos</strong>
+              <p>Combiná soluciones y armá propuestas a medida.</p>
+            </div>
+            <div class="value-item">
+              <span>✓</span>
+              <strong>Calidad profesional</strong>
+              <p>Una imagen coherente en todos los puntos de contacto.</p>
+            </div>
+            <div class="value-item">
+              <span>🤝</span>
+              <strong>Trato directo</strong>
+              <p>Hablás directamente con quienes desarrollan tu solución.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PACKS ================= -->
+    <section class="packs section" id="packs">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">SOLUCIONES COMBINADAS</span>
+          <h2>Packs pensados para impulsar tu negocio</h2>
+          <p>
+            No tenés que contratar todo. Armamos la combinación que realmente
+            necesitás según tu etapa y objetivos.
+          </p>
+        </div>
+
+        <div class="pack-grid">
+
+          <article class="pack-card pack-green">
+            <div class="pack-tag">PACK</div>
+            <h3>EMPRENDE 🚀</h3>
+            <p>
+              Todo lo esencial para comenzar con una imagen profesional y
+              destacar desde el primer día.
+            </p>
+            <div class="pack-list">
+              <span>Logo</span>
+              <span>Tarjetas</span>
+              <span>Stickers</span>
+              <span>Etiquetas</span>
+              <span>Catálogo web</span>
+              <span>QR WhatsApp</span>
+              <span>Piezas 3D</span>
+            </div>
+            <a href="contacto.html" class="pack-btn">Quiero empezar</a>
+          </article>
+
+          <article class="pack-card pack-blue">
+            <div class="pack-tag">PACK</div>
+            <h3>EMPRESA 🏢</h3>
+            <p>
+              Soluciones completas para profesionalizar tu imagen,
+              presencia y procesos.
+            </p>
+            <div class="pack-list">
+              <span>Página web</span>
+              <span>Google / SEO</span>
+              <span>Tarjetas</span>
+              <span>Papelería</span>
+              <span>Vinilos</span>
+              <span>Cartelería</span>
+              <span>Productos 3D</span>
+            </div>
+            <a href="contacto.html" class="pack-btn">Potenciar mi empresa</a>
+          </article>
+
+          <article class="pack-card pack-purple">
+            <div class="pack-tag">PACK</div>
+            <h3>IMAGEN CORPORATIVA 👕</h3>
+            <p>
+              Una identidad coherente desde tu logo hasta la ropa de trabajo
+              y los materiales físicos.
+            </p>
+            <div class="pack-list">
+              <span>Identidad</span>
+              <span>Tarjetas</span>
+              <span>Folletos</span>
+              <span>Vinilos</span>
+              <span>Ropa de trabajo</span>
+              <span>Estampado</span>
+              <span>Bordado</span>
+            </div>
+            <a href="contacto.html" class="pack-btn">Crear mi imagen</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESO ================= -->
+    <section class="process section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">ASÍ TRABAJAMOS</span>
+          <h2>Una idea. Una solución. Un solo equipo.</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <span>01</span>
+            <h3>Escuchamos</h3>
+            <p>Entendemos tu negocio, tus necesidades y tus objetivos.</p>
+          </div>
+          <div class="process-step">
+            <span>02</span>
+            <h3>Diseñamos</h3>
+            <p>Buscamos una solución práctica, profesional y personalizada.</p>
+          </div>
+          <div class="process-step">
+            <span>03</span>
+            <h3>Creamos</h3>
+            <p>Desarrollamos, fabricamos y personalizamos lo que necesitás.</p>
+          </div>
+          <div class="process-step">
+            <span>04</span>
+            <h3>Solucionamos</h3>
+            <p>Te acompañamos para que la solución realmente funcione.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="final-cta">
+      <div class="container">
+        <div class="cta-content">
+          <span class="cta-owl">🦉</span>
+          <div>
+            <span class="section-kicker">HABLEMOS</span>
+            <h2>¿Tenés una idea? <span>Hagámosla realidad.</span></h2>
+            <p>
+              Contanos qué necesita tu empresa o emprendimiento y
+              armamos una solución a tu medida.
+            </p>
+          </div>
+          <a class="btn btn-yellow" href="contacto.html">Hablar con SG →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">SG <span>DEV & TESTING</span></div>
+        <p>Soluciones digitales y físicas para empresas y emprendimientos.</p>
+      </div>
+
+      <div>
+        <strong>Soluciones</strong>
+        <a href="#soluciones">SG Digital</a>
+        <a href="#soluciones">SG Identidad</a>
+        <a href="#soluciones">SG Fabricación</a>
+        <a href="#soluciones">SG Uniformes</a>
+      </div>
+
+      <div>
+        <strong>Contacto</strong>
+        <a href="mailto:sgdev.uy@gmail.com">sgdev.uy@gmail.com</a>
+        <a href="https://wa.me/59891041567" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="contacto.html">Formulario de contacto</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        © 2026 SG Dev & Testing — Soluciones integrales para empresas y emprendimientos.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      const opened = navMenu.classList.toggle('open');
+      menuToggle.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', opened);
+    });
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        menuToggle.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+  <script src="menu.js"></script>
 </body>
-
 </html>

@@ -1,90 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SG Dev & Testing: soluciones integrales para empresas y emprendimientos. Desarrollo web, identidad visual, automatización, impresión 3D, ropa de trabajo y más.">
+  <meta name="keywords" content="desarrollo web Uruguay, identidad visual, impresión 3D, ropa de trabajo, automatización, testing QA, SG Dev Testing, soluciones empresariales">
+  <meta name="author" content="SG Dev & Testing">
+  <meta name="theme-color" content="#06152d">
+  <title>SG Dev & Testing | Soluciones integrales para empresas</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Open Graph -->
+  <meta property="og:title" content="SG Dev & Testing | Soluciones integrales">
+  <meta property="og:description" content="Del mundo digital al mundo físico. Pensamos. Diseñamos. Creamos. Solucionamos.">
+  <meta property="og:type" content="website">
 
-    <title>Contacto | Desarrollo Web y Testing - SG Dev & Testing Uruguay</title>
-
-    <!-- SEO -->
-    <meta name="description" content="SG Dev & Testing - Desarrollo web, testing de software y soluciones digitales para empresas. Mejoramos tu presencia online y rendimiento web.">
-    <meta name="keywords" content="desarrollo web Uruguay, testing software, páginas web, SEO, SG Dev, diseño web, optimización web">
-    <meta name="author" content="SG Dev & Testing">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "name": "Contacto - SG Dev & Testing",
-  "description": "Página de contacto para consultas sobre desarrollo web, testing QA y automatización.",
-  "url": "https://sgdevuy-arch.github.io/sg-dev-testing/contacto.html"
-}
-</script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="nuevo1.css">
+  <link rel="stylesheet" href="style.css">
+ 
 </head>
-
+  <!-- JAVASCRIPT DEL MENÚ -->
+  
 <body>
 
-<!-- NAVBAR PREMIUM -->
-<header class="navbar">
+<!-- ================= NAVBAR ================= -->
+<header class="site-header">
+  <nav class="navbar container">
 
-    <!-- LOGO -->
-    <div class="logo">
-        SG <span>Dev & Testing</span>
-    </div>
+    <!-- MARCA -->
+    <a class="brand" href="index.html" aria-label="SG Dev & Testing - Inicio">
+      <span class="brand-mark">SG</span>
+
+      <span class="brand-text">
+        <strong>SG</strong>
+        <small>DEV & TESTING</small>
+      </span>
+    </a>
+
 
     <!-- BOTÓN MOBILE -->
-    <button class="menu-toggle" id="menu-toggle">
-        ☰
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
-    <!-- LINKS -->
-    <nav class="nav-links" id="nav-links">
 
-        <a href="index.html">Inicio</a>
+    <!-- MENÚ -->
+    <div class="nav-menu" id="navMenu">
 
-        <a href="nuestroTrabajo.html">Proyectos</a>
+      <!-- INICIO -->
+      <a class="active" href="index.html">
+        Inicio
+      </a>
 
-        <a href="servicios.html">Servicios</a>
-		<a href="demos.html">Modelos Web</a>
-		
-		<a href="analizador.html">SG Analyzer</a>
-		 <a href="nosotros.html">Sobre Nosotros</a>
 
-        <a href="contacto.html">Contacto</a>
-		
-	
+      <!-- ================= SOLUCIONES ================= -->
+<div class="nav-dropdown">
 
-       
+  <button
+    class="nav-dropdown-btn"
+    type="button"
+    aria-expanded="false"
+  >
+    Soluciones
+    <span class="dropdown-arrow">⌄</span>
+  </button>
 
-    </nav>
+  <div class="solutions-menu">
 
+    <div class="solutions-column">
+      <h3>💻 Digital</h3>
+
+      <a href="desarrollo-web.html">Desarrollo Web</a>
+      <a href="catalogos.html">Catálogos Digitales</a>
+      <a href="demos.html">Modelos Web</a>
+      <a href="sg-analyzer.html">SG Analyzer</a>
+    </div>
+
+    <div class="solutions-column">
+      <h3>🎨 Identidad</h3>
+
+      <a href="logos.html">Diseño de Logos</a>
+      <a href="identidad-visual.html">Identidad Visual</a>
+    </div>
+
+    <div class="solutions-column">
+      <h3>👕 Fabricación</h3>
+
+      <a href="uniformes.html">Uniformes</a>
+      <a href="ropa-trabajo.html">Ropa de Trabajo</a>
+      <a href="personalizacion.html">Personalización</a>
+    </div>
+
+  </div>
+
+</div>
+
+
+      <!-- PROYECTOS -->
+      <a href="proyectos.html">
+        Proyectos
+      </a>
+
+
+      <!-- SOBRE SG -->
+      <a href="sobre-nosotros.html">
+        Sobre SG
+      </a>
+
+
+      <!-- CONTACTO -->
+      <a class="nav-cta" href="contacto.html">
+        Contactanos
+      </a>
+
+    </div>
+
+  </nav>
 </header>
-
-    <!-- MENU MOBILE -->
-    <script>
-        document.getElementById("menu-toggle").addEventListener("click", () => {
-            document.getElementById("nav-links").classList.toggle("active");
-        });
-    </script>
+  <main>
 	
 <!-- CONTACTO -->
+<section class="hero">
 <main class="services" id="contacto">
 
-    <h1>Contacto</h1>
+    
+	          <h1><span class="yellow">Contacto.</span>
+          </h1>
 
     <p>
         Estamos listos para ayudarte con desarrollo web,
         testing de software y soluciones digitales.
     </p>
+</br>
 
     <div class="cards">
 
@@ -109,6 +161,7 @@
             </a>
 
         </div>
+		
 
         <div class="card">
 
@@ -124,14 +177,22 @@
     </div>
 
 </main>
-
+</section>
 <!-- FORMULARIO -->
-<div class="contact-section">
+
+      <div class="container">
+        <div class="value-box">
+         
+                      <div class="value-heading">
+            
+            <h2><span>Escribinos</span> y te respondemos a la brevedad.</h2>
+          </div>
+			<div class="contact-section">
 
     <div class="contact-box">
 
         <h2>📬 Contacto directo</h2>
-        <p>Escribinos y te respondemos a la brevedad.</p>
+       
 
         <form action="mailto:sgdev.uy@gmail.com" method="post" enctype="text/plain" class="contact-form">
 
@@ -149,11 +210,17 @@
 
 </div>
 
+        </div>
+      
+	   </div>
+  
+
+
 <!-- FOOTER -->
 <footer>
     <p>Desarrollo web en Uruguay | SG Dev & Testing</p>
     © 2026 SG Dev & Testing - Todos los derechos reservados
 </footer>
-
+  <script src="menu.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 function obtenerColor(score) {
     if (score >= 85) return "#00ff88";
     if (score >= 60) return "#ffc107";

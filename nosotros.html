@@ -1,194 +1,716 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sobre Nosotros | SG Dev & Testing Uruguay</title>
+  <meta name="description"
+    content="SG Dev & Testing: soluciones integrales para empresas y emprendimientos. Desarrollo web, identidad visual, automatización, impresión 3D, ropa de trabajo y más.">
 
-    <meta name="description" content="SG Dev & Testing es un equipo de desarrollo web y software en Uruguay especializado en soluciones digitales personalizadas.">
+  <meta name="keywords"
+    content="desarrollo web Uruguay, identidad visual, impresión 3D, ropa de trabajo, automatización, testing QA, SG Dev Testing, soluciones empresariales">
 
-    <link rel="stylesheet" href="nuevo1.css">
-	<!-- ICONOS -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-		  
-		  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "name": "Nosotros - SG Dev & Testing",
-  "description": "Conoce más sobre SG Dev & Testing y nuestra misión de ayudar a empresas a crecer mediante soluciones tecnológicas."
-}
-</script>
+  <meta name="author" content="SG Dev & Testing">
+
+  <meta name="theme-color" content="#06152d">
+
+  <meta property="og:title"
+    content="SG Dev & Testing | Soluciones integrales">
+
+  <meta property="og:description"
+    content="Del mundo digital al mundo físico. Pensamos. Diseñamos. Creamos. Solucionamos.">
+
+  <meta property="og:type" content="website">
+
+  <title>SG Dev & Testing | Sobre Nosotros</title>
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<header class="navbar">
 
-    <!-- LOGO -->
-    <div class="logo">
-        SG <span>Dev & Testing</span>
-    </div>
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
 
-    <!-- BOTÓN MOBILE -->
-    <button class="menu-toggle" id="menu-toggle">
-        ☰
+<header class="site-header">
+
+  <nav class="navbar container">
+
+
+    <!-- MARCA -->
+
+    <a
+      class="brand"
+      href="index.html"
+      aria-label="SG Dev & Testing - Inicio">
+
+      <span class="brand-mark">
+        SG
+      </span>
+
+      <span class="brand-text">
+
+        <strong>
+          SG
+        </strong>
+
+        <small>
+          DEV & TESTING
+        </small>
+
+      </span>
+
+    </a>
+
+
+    <!-- MENU MOBILE -->
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      type="button">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
     </button>
 
-    <!-- LINKS -->
-    <nav class="nav-links" id="nav-links">
 
-        <a href="index.html">Inicio</a>
+    <!-- MENU -->
 
-        <a href="nuestroTrabajo.html">Proyectos</a>
+    <div
+      class="nav-menu"
+      id="navMenu">
 
-        <a href="servicios.html">Servicios</a>
-		<a href="demos.html">Modelos Web</a>
-		
-		<a href="analizador.html">SG Analyzer</a>
-		 <a href="nosotros.html">Sobre Nosotros</a>
 
-        <a href="contacto.html">Contacto</a>
-		
-	
+      <!-- INICIO -->
 
-       
+      <a href="index.html">
+        Inicio
+      </a>
 
-    </nav>
 
-</header>
+      <!-- SOLUCIONES -->
 
-<script>
-function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
-}
-</script>
+      <div class="nav-dropdown">
 
-<!-- CONTENIDO -->
-<main class="services" id="about">
+        <button
+          class="nav-dropdown-btn"
+          type="button"
+          aria-expanded="false">
 
-    <h1>Sobre Nosotros</h1>
+          Soluciones
 
-    <p>
-        SG Dev & Testing es un equipo de desarrollo en Uruguay enfocado en crear soluciones digitales personalizadas.
-    </p>
+          <span class="dropdown-arrow">
+            ⌄
+          </span>
 
-    <!-- GRID DE TARJETAS -->
-<section class="about-blocks">
+        </button>
 
-    <div class="about-item">
-        <h3>🏢 Quiénes somos</h3>
-        <p>Somos dos desarrolladores en Lascano, Rocha - Uruguay, especializados en desarrollo web y software.</p>
-    </div>
 
-    <div class="about-item">
-        <h3>💻 Qué hacemos</h3>
-        <p>Desarrollo web, aplicaciones Android, sistemas de escritorio, testing y análisis SEO.</p>
-    </div>
+        <div class="solutions-menu">
 
-    <div class="about-item">
-        <h3>📊 SG Analyzer</h3>
-        <p>Herramienta propia para análisis de rendimiento, SEO y calidad de sitios web.</p>
-    </div>
 
-    <div class="about-item">
-        <h3>🎯 Enfoque</h3>
-        <p>Soluciones personalizadas adaptadas a cada cliente y pensadas para escalar con su negocio.</p>
-    </div>
+          <!-- DIGITAL -->
 
-    <div class="about-item">
-        <h3>⚙️ Tecnologías</h3>
-        <p>HTML, CSS, JavaScript, PHP, MySQL, Java y C#.</p>
-    </div>
+          <div class="solutions-column">
 
-    <div class="about-item">
-        <h3>📍 Ubicación</h3>
-        <p>Lascano, Rocha - Uruguay</p>
-    </div>
+            <h3>
+              💻 Digital
+            </h3>
 
-</section>
-<section class="mision-vision">
+            <a href="desarrollo-web.html">
+              Desarrollo Web
+            </a>
 
-    <div class="objetivo">
-        <h2>Nuestro Objetivo</h2>
-        <p>
-            Ayudar a empresas y emprendedores a crecer mediante soluciones digitales
-            modernas, eficientes y accesibles.
-        </p>
-    </div>
+            <a href="demos.html">
+              Modelos Web
+            </a>
 
-    <div class="vision">
-        <h2>Nuestra Visión</h2>
-        <p>
-            Crecer junto a nuestros clientes, aportando soluciones tecnológicas
-            que les permitan mejorar su productividad y fortalecer su presencia digital.
-        </p>
-    </div>
+            <a href="analizador.html">
+              SG Analyzer
+            </a>
 
-</section>
-    <!-- EQUIPO (SEPARADO Y CENTRADO) -->
-    <section class="team-section">
+          </div>
 
-        <h2>Nuestro equipo</h2>
 
-        <div class="team-container">
+          <!-- IDENTIDAD -->
 
-            <div class="team-card">
-                <img src="Gaston.png" alt="Gastón Ferreira SG Dev">
-                <h3>Gastón Ferreira</h3>
-                <p>Desarrollador Full Stack</p>
-            </div>
+          <div class="solutions-column">
 
-            <div class="team-card">
-                <img src="Silvina.png" alt="Silvina Ferreira SG Dev">
-                <h3>Silvina Ferreira</h3>
-                <p>Testing y soporte de software</p>
-            </div>
+            <h3>
+              🎨 Identidad
+            </h3>
+
+            <a href="logos.html">
+              Diseño de Logos
+            </a>
+
+            <a href="identidad-visual.html">
+              Identidad Visual
+            </a>
+
+          </div>
+
+
+          <!-- FABRICACION -->
+
+          <div class="solutions-column">
+
+            <h3>
+              👕 Fabricación
+            </h3>
+
+            <a href="uniformes.html">
+              Uniformes
+            </a>
+
+            <a href="ropa-trabajo.html">
+              Ropa de Trabajo
+            </a>
+
+            <a href="personalizacion.html">
+              Personalización
+            </a>
+
+          </div>
+
 
         </div>
 
-    </section>
+      </div>
 
-</main>
 
-<footer>
-    <p>SG Dev & Testing | Uruguay</p>
-    © 2026 Todos los derechos reservados
-</footer>
-<div class="social-sidebar">
+      <!-- PROYECTOS -->
 
-    <a href="https://wa.me/59891041567"
-       target="_blank"
-       class="social-btn whatsapp">
+      <a href="nuestroTrabajo.html">
+        Proyectos
+      </a>
 
-        <i class="fab fa-whatsapp"></i>
-    </a>
 
-    <a href="https://www.facebook.com/profile.php?id=61590281644163"
-       target="_blank"
-       class="social-btn facebook">
+      <!-- SERVICIOS -->
 
-        <i class="fab fa-facebook-f"></i>
-    </a>
+      <a href="servicios.html">
+        Servicios
+      </a>
 
-    <a href="https://instagram.com/sgdev.uy/"
-       target="_blank"
-       class="social-btn instagram">
 
-        <i class="fab fa-instagram"></i>
-    </a>
-</div>
-    <!-- MENU MOBILE -->
-    <script>
-        document.getElementById("menu-toggle").addEventListener("click", () => {
-            document.getElementById("nav-links").classList.toggle("active");
-        });
-    </script>
+      <!-- SOBRE SG -->
+
+      <a
+        class="active"
+        href="nosotros.html">
+
+        Sobre SG
+
+      </a>
+
+
+      <!-- CONTACTO -->
+
+      <a
+        class="nav-cta"
+        href="contacto.html">
+
+        Contactanos
+
+      </a>
+
+
+    </div>
+
+  </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero">
+
+
+  <div class="hero-glow hero-glow-1"></div>
+
+  <div class="hero-glow hero-glow-2"></div>
+
+
+  <div class="container hero-grid">
+
+
+    <div class="hero-content">
+
+
+      <span class="section-kicker">
+        SOBRE SG
+      </span>
+
+
+      <h1>
+        Sobre Nosotros
+      </h1>
+
+
+      <p class="hero-lead">
+
+        SG Dev & Testing es un equipo de desarrollo
+        en Uruguay enfocado en crear soluciones digitales
+        personalizadas.
+
+      </p>
+
+
+    </div>
+
+
+    <div class="hero-visual">
+
+
+      <div class="visual-orbit orbit-1"></div>
+
+      <div class="visual-orbit orbit-2"></div>
+
+
+      <div class="visual-core">
+
+        <img
+          src="logoSG.png"
+          alt="Logo oficial de SG Dev y SG Analyzer">
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INFORMACION
+========================================================= -->
+
+<section class="section">
+
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <span class="section-kicker">
+        SG DEV & TESTING
+      </span>
+
+
+      <h2>
+        Conocé más sobre nosotros
+      </h2>
+
+    </div>
+
+
+
+    <!-- GRID DE TARJETAS -->
+
+    <div class="logo-features">
+
+ </br>
+      <!-- QUIENES SOMOS -->
+	   
+
+      <div class="cta-content">
+
+        <span>
+          01
+        </span>
+
+        <h3>
+          🏢 Quiénes somos
+        </h3>
+
+        <p>
+          Somos dos desarrolladores en Lascano, Rocha - Uruguay,
+          especializados en desarrollo web y software.
+        </p>
+
+      </div>
+
+ </br>
+      <!-- QUE HACEMOS -->
+
+      <div class="cta-content">
+
+        <span>
+          02
+        </span>
+
+        <h3>
+          💻 Qué hacemos
+        </h3>
+
+        <p>
+          Desarrollo web, aplicaciones Android, sistemas de escritorio,
+          testing y análisis SEO.
+        </p>
+
+      </div>
+
+ </br>
+      <!-- SG ANALYZER -->
+
+      <div class="cta-content">
+
+        <span>
+          03
+        </span>
+
+        <h3>
+          📊 SG Analyzer
+        </h3>
+
+        <p>
+          Herramienta propia para análisis de rendimiento,
+          SEO y calidad de sitios web.
+        </p>
+
+      </div>
+ </br>
+
+      <!-- ENFOQUE -->
+
+      <div class="cta-content">
+
+        <span>
+          04
+        </span>
+
+        <h3>
+          🎯 Enfoque
+        </h3>
+
+        <p>
+          Soluciones personalizadas adaptadas a cada cliente
+          y pensadas para escalar con su negocio.
+        </p>
+
+      </div>
+ </br>
+
+      <!-- TECNOLOGIAS -->
+
+      <div class="cta-content">
+
+        <span>
+          05
+        </span>
+
+        <h3>
+          ⚙️ Tecnologías
+        </h3>
+
+        <p>
+          HTML, CSS, JavaScript, PHP, MySQL, Java y C#.
+        </p>
+
+      </div>
+ </br>
+
+
+      <!-- UBICACION -->
+
+      <div class="cta-content">
+
+        <span>
+          06
+        </span>
+
+        <h3>
+          📍 Ubicación
+        </h3>
+
+        <p>
+          Lascano, Rocha - Uruguay
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+ </div>
+</section>
+
+
+
+<!-- =========================================================
+     MISION Y VISION
+========================================================= -->
+ <div class="container">
+<section class="value-section">
+
+
+  <div class="container">
+
+
+    <div class="value-box">
+
+
+      <div class="value-heading">
+
+
+        <span class="section-kicker">
+          NUESTRO PROPÓSITO
+        </span>
+
+
+        <h2>
+          Nuestro Objetivo y
+          <span>Nuestra Visión</span>
+        </h2>
+
+
+      </div>
+
+
+
+      <div class="value-items">
+
+
+        <!-- OBJETIVO -->
+
+        <div class="value-item">
+
+
+          <span>
+            🎯
+          </span>
+
+
+          <strong>
+            Nuestro Objetivo
+          </strong>
+
+
+          <p>
+            Ayudar a empresas y emprendedores a crecer mediante
+            soluciones digitales modernas, eficientes y accesibles.
+          </p>
+
+
+        </div>
+
+
+
+        <!-- VISION -->
+
+        <div class="value-item">
+
+
+          <span>
+            🚀
+          </span>
+
+
+          <strong>
+            Nuestra Visión
+          </strong>
+
+
+          <p>
+            Crecer junto a nuestros clientes, aportando soluciones
+            tecnológicas que les permitan mejorar su productividad
+            y fortalecer su presencia digital.
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     EQUIPO
+========================================================= -->
+
+<section
+  class="section"
+  id="equipo">
+
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+
+      <span class="section-kicker">
+        NUESTRO EQUIPO
+      </span>
+
+
+      <h2>
+        Nuestro equipo
+      </h2>
+
+
+    </div>
+
+
+
+    <div class="team-container">
+
+
+      <!-- GASTON -->
+
+      <div class="team-card">
+
+
+        <img
+          src="Gaston.png"
+          alt="Gastón Ferreira SG Dev">
+
+
+        <h3>
+          Gastón Ferreira
+        </h3>
+
+
+        <p>
+          Desarrollador Full Stack
+        </p>
+
+
+      </div>
+
+
+
+      <!-- SILVINA -->
+
+      <div class="team-card">
+
+
+        <img
+          src="Silvina.png"
+          alt="Silvina Ferreira SG Dev">
+
+
+        <h3>
+          Silvina Ferreira
+        </h3>
+
+
+        <p>
+          Testing y soporte de software
+        </p>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+
+
+
+
+<!-- =========================================================
+     MENU MOBILE
+========================================================= -->
+
+<script>
+
+const menuToggle =
+  document.getElementById('menuToggle');
+
+const navMenu =
+  document.getElementById('navMenu');
+
+
+menuToggle.addEventListener('click', () => {
+
+  const opened =
+    navMenu.classList.toggle('open');
+
+
+  menuToggle.classList.toggle('open');
+
+
+  menuToggle.setAttribute(
+    'aria-expanded',
+    opened
+  );
+
+});
+
+
+document
+  .querySelectorAll('.nav-menu a')
+  .forEach(link => {
+
+    link.addEventListener('click', () => {
+
+      navMenu.classList.remove('open');
+
+      menuToggle.classList.remove('open');
+
+      menuToggle.setAttribute(
+        'aria-expanded',
+        'false'
+      );
+
+    });
+
+  });
+
+</script>
+
+
+<script src="menu.js"></script>
+
+
 </body>
+
 </html>

@@ -1,82 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<link rel="icon" type="image/png" href="favicon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SG Dev & Testing: soluciones integrales para empresas y emprendimientos. Desarrollo web, identidad visual, automatización, impresión 3D, ropa de trabajo y más.">
+  <meta name="keywords" content="desarrollo web Uruguay, identidad visual, impresión 3D, ropa de trabajo, automatización, testing QA, SG Dev Testing, soluciones empresariales">
+  <meta name="author" content="SG Dev & Testing">
+  <meta name="theme-color" content="#06152d">
+  <title>SG Dev & Testing | Soluciones integrales para empresas</title>
 
-    <title>Servicios - SG Dev & Testing</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="SG Dev & Testing | Soluciones integrales">
+  <meta property="og:description" content="Del mundo digital al mundo físico. Pensamos. Diseñamos. Creamos. Solucionamos.">
+  <meta property="og:type" content="website">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="nuevo1.css">
-	<!-- ICONOS -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-		  
-		  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Servicios de SG Dev & Testing",
-  "description": "Listado de servicios de desarrollo web, testing QA y automatización ofrecidos por SG Dev & Testing."
-}
-</script>
+  <link rel="stylesheet" href="style.css">
+ 
 </head>
-
+  <!-- JAVASCRIPT DEL MENÚ -->
+  
 <body>
 
-<!-- NAVBAR PREMIUM -->
-<header class="navbar">
+<!-- ================= NAVBAR ================= -->
+<header class="site-header">
+  <nav class="navbar container">
 
-    <!-- LOGO -->
-    <div class="logo">
-        SG <span>Dev & Testing</span>
-    </div>
+    <!-- MARCA -->
+    <a class="brand" href="index.html" aria-label="SG Dev & Testing - Inicio">
+      <span class="brand-mark">SG</span>
+
+      <span class="brand-text">
+        <strong>SG</strong>
+        <small>DEV & TESTING</small>
+      </span>
+    </a>
+
 
     <!-- BOTÓN MOBILE -->
-    <button class="menu-toggle" id="menu-toggle">
-        ☰
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
-    <!-- LINKS -->
-    <nav class="nav-links" id="nav-links">
 
-        <a href="index.html">Inicio</a>
+    <!-- MENÚ -->
+    <div class="nav-menu" id="navMenu">
 
-        <a href="nuestroTrabajo.html">Proyectos</a>
+      <!-- INICIO -->
+      <a class="active" href="index.html">
+        Inicio
+      </a>
 
-        <a href="servicios.html">Servicios</a>
-		<a href="demos.html">Modelos Web</a>
-		
-		<a href="analizador.html">SG Analyzer</a>
-		 <a href="nosotros.html">Sobre Nosotros</a>
 
-        <a href="contacto.html">Contacto</a>
-		
-	
+      <!-- ================= SOLUCIONES ================= -->
+<div class="nav-dropdown">
 
-       
+  <button
+    class="nav-dropdown-btn"
+    type="button"
+    aria-expanded="false"
+  >
+    Soluciones
+    <span class="dropdown-arrow">⌄</span>
+  </button>
 
-    </nav>
+  <div class="solutions-menu">
 
+    <div class="solutions-column">
+      <h3>💻 Digital</h3>
+
+      <a href="desarrollo-web.html">Desarrollo Web</a>
+      
+      <a href="demos.html">Modelos Web</a>
+      <a href="analizador.html">SG Analyzer</a>
+    </div>
+
+    <div class="solutions-column">
+      <h3>🎨 Identidad</h3>
+
+      <a href="logos.html">Diseño de Logos</a>
+      <a href="identidad-visual.html">Identidad Visual</a>
+    </div>
+
+    <div class="solutions-column">
+      <h3>👕 Fabricación</h3>
+
+      <a href="uniformes.html">Uniformes</a>
+      <a href="ropa-trabajo.html">Ropa de Trabajo</a>
+      <a href="personalizacion.html">Personalización</a>
+    </div>
+
+  </div>
+
+</div>
+
+
+      <!-- PROYECTOS -->
+      <a href="nuestroTrabajo.html">
+        Proyectos
+      </a>
+      <!-- Servicios -->
+      <a href="servicios.html">
+        Servicios
+      </a>
+
+
+      <!-- SOBRE SG -->
+      <a href="sobre-nosotros.html">
+        Sobre SG
+      </a>
+
+
+      <!-- CONTACTO -->
+      <a class="nav-cta" href="contacto.html">
+        Contactanos
+      </a>
+
+    </div>
+
+  </nav>
 </header>
+  <main>
 
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
 
-<!-- HERO -->
-<section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+         
 
-    <h1>Nuestros Servicios</h1>
+          <h1> 
+            Nuestros <span class="cyan">Servicios</span>
+            </span>
+          </h1>
 
-    <p class="services-intro">
-        Ayudamos a empresas y emprendedores de Uruguay mediante desarrollo web,
+          <p class="hero-lead">
+           Ayudamos a empresas y emprendedores de Uruguay mediante desarrollo web,
         testing profesional y soluciones tecnológicas diseñadas para impulsar su crecimiento.
-    </p>
+            
+          </p>
 
-</section>
+          
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#soluciones">Conocé nuestras soluciones</a>
+            <a class="btn btn-outline" href="contacto.html">Solicitar presupuesto</a>
+          </div>
+
+          <div class="hero-trust">
+            <span>✓ Un solo proveedor</span>
+            <span>✓ Soluciones personalizadas</span>
+            <span>✓ Atención directa</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+         
+
+          <div class="visual-orbit orbit-1"></div>
+          <div class="visual-orbit orbit-2"></div>
+
+          <div class="visual-core">
+                    <!-- LOGO -->
+        <img src="logoSG.png" alt="Logo oficial de SG Dev y SG Analyzer">
+
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+
+
 
 <!-- SERVICIOS -->
+<div class="value-box">
 <section class="services" id="servicios">
  <div class="services-list">
 
@@ -161,7 +268,7 @@
         </div>
 
     </div>
-
+</div>
 </section>
 
 <!-- CONTACTO -->
