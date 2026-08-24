@@ -1,242 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description"
-    content="SG Dev & Testing: soluciones integrales para empresas y emprendimientos. Desarrollo web, identidad visual, automatización, impresión 3D, ropa de trabajo y más.">
-
-  <meta name="keywords"
-    content="desarrollo web Uruguay, identidad visual, impresión 3D, ropa de trabajo, automatización, testing QA, SG Dev Testing, soluciones empresariales">
-
+  <meta name="description" content="SG Dev & Testing: soluciones integrales para empresas y emprendimientos. Desarrollo web, identidad visual, automatización, impresión 3D, ropa de trabajo y más.">
+  <meta name="keywords" content="desarrollo web Uruguay, identidad visual, impresión 3D, ropa de trabajo, automatización, testing QA, SG Dev Testing, soluciones empresariales">
   <meta name="author" content="SG Dev & Testing">
-
   <meta name="theme-color" content="#06152d">
+  <title>SG Dev & Testing | Soluciones integrales para empresas</title>
 
-  <meta property="og:title"
-    content="SG Dev & Testing | Soluciones integrales">
-
-  <meta property="og:description"
-    content="Del mundo digital al mundo físico. Pensamos. Diseñamos. Creamos. Solucionamos.">
-
+  <!-- Open Graph -->
+  <meta property="og:title" content="SG Dev & Testing | Soluciones integrales">
+  <meta property="og:description" content="Del mundo digital al mundo físico. Pensamos. Diseñamos. Creamos. Solucionamos.">
   <meta property="og:type" content="website">
 
-  <title>SG Dev & Testing | Sobre Nosotros</title>
-
   <link rel="stylesheet" href="style.css">
-
+ 
 </head>
-
-
+  <!-- JAVASCRIPT DEL MENÚ -->
+  
 <body>
 
-
-<!-- =========================================================
-     NAVBAR
-========================================================= -->
-
+<!-- ================= NAVBAR ================= -->
 <header class="site-header">
-
   <nav class="navbar container">
 
-
     <!-- MARCA -->
-
-    <a
-      class="brand"
-      href="index.html"
-      aria-label="SG Dev & Testing - Inicio">
-
-      <span class="brand-mark">
-        SG
-      </span>
+    <a class="brand" href="index.html" aria-label="SG Dev & Testing - Inicio">
+      <span class="brand-mark">SG</span>
 
       <span class="brand-text">
-
-        <strong>
-          SG
-        </strong>
-
-        <small>
-          DEV & TESTING
-        </small>
-
+        <strong>SG</strong>
+        <small>DEV & TESTING</small>
       </span>
-
     </a>
 
 
-    <!-- MENU MOBILE -->
-
+    <!-- BOTÓN MOBILE -->
     <button
       class="menu-toggle"
       id="menuToggle"
       aria-label="Abrir menú"
       aria-expanded="false"
-      type="button">
-
+    >
       <span></span>
       <span></span>
       <span></span>
-
     </button>
 
 
-    <!-- MENU -->
-
-    <div
-      class="nav-menu"
-      id="navMenu">
-
+    <!-- MENÚ -->
+    <div class="nav-menu" id="navMenu">
 
       <!-- INICIO -->
-
-      <a href="index.html">
+      <a class="active" href="index.html">
         Inicio
       </a>
 
 
-      <!-- SOLUCIONES -->
+      <!-- ================= SOLUCIONES ================= -->
+<div class="nav-dropdown">
 
-      <div class="nav-dropdown">
+  <button
+    class="nav-dropdown-btn"
+    type="button"
+    aria-expanded="false"
+  >
+    Soluciones
+    <span class="dropdown-arrow">⌄</span>
+  </button>
 
-        <button
-          class="nav-dropdown-btn"
-          type="button"
-          aria-expanded="false">
+  <div class="solutions-menu">
 
-          Soluciones
+    <div class="solutions-column">
+      <h3>💻 Digital</h3>
 
-          <span class="dropdown-arrow">
-            ⌄
-          </span>
+      <a href="desarrollo-web.html">Desarrollo Web</a>
+      
+      <a href="demos.html">Modelos Web</a>
+      <a href="analizador.html">SG Analyzer</a>
+    </div>
 
-        </button>
+    <div class="solutions-column">
+      <h3>🎨 Identidad</h3>
 
+      <a href="logos.html">Diseño de Logos</a>
+     
+    </div>
 
-        <div class="solutions-menu">
+    <div class="solutions-column">
+      <h3>👕 Fabricación</h3>
 
+      <a href="uniformes.html">Uniformes</a>
+      <a href="ropa-trabajo.html">Ropa de Trabajo</a>
+      <a href="personalizacion.html">Personalización</a>
+    </div>
 
-          <!-- DIGITAL -->
+  </div>
 
-          <div class="solutions-column">
-
-            <h3>
-              💻 Digital
-            </h3>
-
-            <a href="desarrollo-web.html">
-              Desarrollo Web
-            </a>
-
-            <a href="demos.html">
-              Modelos Web
-            </a>
-
-            <a href="analizador.html">
-              SG Analyzer
-            </a>
-
-          </div>
-
-
-          <!-- IDENTIDAD -->
-
-          <div class="solutions-column">
-
-            <h3>
-              🎨 Identidad
-            </h3>
-
-            <a href="logos.html">
-              Diseño de Logos
-            </a>
-
-            <a href="identidad-visual.html">
-              Identidad Visual
-            </a>
-
-          </div>
-
-
-          <!-- FABRICACION -->
-
-          <div class="solutions-column">
-
-            <h3>
-              👕 Fabricación
-            </h3>
-
-            <a href="uniformes.html">
-              Uniformes
-            </a>
-
-            <a href="ropa-trabajo.html">
-              Ropa de Trabajo
-            </a>
-
-            <a href="personalizacion.html">
-              Personalización
-            </a>
-
-          </div>
-
-
-        </div>
-
-      </div>
+</div>
 
 
       <!-- PROYECTOS -->
-
       <a href="nuestroTrabajo.html">
         Proyectos
       </a>
-
-
-      <!-- SERVICIOS -->
-
+      <!-- Servicios -->
       <a href="servicios.html">
         Servicios
       </a>
 
 
       <!-- SOBRE SG -->
-
-      <a
-        class="active"
-        href="nosotros.html">
-
+      <a href="nosotros.html">
         Sobre SG
-
       </a>
 
 
       <!-- CONTACTO -->
-
-      <a
-        class="nav-cta"
-        href="contacto.html">
-
+      <a class="nav-cta" href="contacto.html">
         Contactanos
-
       </a>
-
 
     </div>
 
   </nav>
-
 </header>
-
-
-
-<main>
-
-
+  <main>
 <!-- =========================================================
      HERO
 ========================================================= -->
